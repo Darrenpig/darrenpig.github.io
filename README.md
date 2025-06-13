@@ -7,5 +7,5 @@
 	<img alt="GitHub followers" src="https://img.shields.io/github/followers/darrenpig">
 <br>
 <a href="https://darrenpig.github.io/" target="_blank" style="margin-top: 10px">
-<a href="https://darrenpig.github.io/" target="_blank"><img src="https://github.com/Darrenpig/darrenpig.github.io/tree/main/files#:~:text=6%20minutes%20ago-,%E5%85%89%E7%94%B5%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2%E5%9B%BE%E6%A0%87.jpg" height="70px" style="margin-bottom:-1px"></a><a href="https://github.com/Darrenpig/darrenpig.github.io/" target="_blank"><img src="https://github.com/Darrenpig/darrenpig.github.io/tree/main/files#:~:text=2%20minutes%20ago-,%E5%B8%B8%E5%B7%9E%E5%B7%A5%E5%AD%A6%E9%99%A2.png" height="70px" style="margin-bottom:-1px"></a>
+<a href="https://darrenpig.github.io/" target="_blank"><img src="https://github.com/Darrenpig/darrenpig.github.io/blob/main/files/CIT_Logo.png" height="70px" style="margin-bottom:-1px"></a><a href="https://darrenpig.github.io/" target="_blank"><img src="https://github.com/Darrenpig/darrenpig.github.io/blob/main/files/CIT_PV_Logo.png" height="70px" style="margin-bottom:-1px"></a>
 </h1>
