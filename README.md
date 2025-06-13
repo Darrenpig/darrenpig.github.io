@@ -19,7 +19,7 @@
   <a href="mailto:22230635@czu.cn" target="_blank"><img src="./files/icon/email.png" height="32px" style="margin-bottom:-4px"></a>&nbsp;
   <a href="https://scholar.google.com/citations?user=nL93WMEAAAAJ&hl=en" target="_blank"><img src="./files/icon/google_scholar.png" height="30px" style="margin-bottom:-3px"></a>&nbsp;
   <a href="https://github.com/darrenpig" target="_blank"><img src="./files/icon/github_s.jpg" height="30px" style="margin-bottom:-3px"></a>&nbsp;
-  <a href="https://twitter.com/darrenpig" target="_blank"><img src="./files/icon/X_icon.png" height="30px" style="margin-bottom:-3px"></a>&nbsp;
+  <a href="[https://twitter.com/darrenpig](https://x.com/PeiWei_Pig)" target="_blank"><img src="./files/icon/X_icon.png" height="30px" style="margin-bottom:-3px"></a>&nbsp;
   <a href="./files/my_wechat.jpg" target="_blank"><img src="./files/icon/wechat.png" height="30px" style="margin-bottom:-3px"></a>&nbsp;
   <a href="https://space.bilibili.com/438904165?spm_id_from=333.337.0.0" target="_blank"><img src="./files/icon/bilibili.png" height="30px" style="margin-bottom:-3px"></a>&nbsp;
   <a href="https://www.zhihu.com/people/darrenpig" target="_blank"><img src="./files/icon/zhihu.png" height="30px" style="margin-bottom:-3px"></a>&nbsp; 
