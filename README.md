@@ -7,5 +7,5 @@
 	<img alt="GitHub followers" src="https://img.shields.io/github/followers/darrenpig">
 <br>
 <a href="https://darrenpig.github.io/" target="_blank" style="margin-top: 10px">
-<a href="https://darrenpig.github.io/" target="_blank"><img src="https://github.com/Darrenpig/darrenpig.github.io/blob/main/files/CIT_Logo.png" height="70px" style="margin-bottom:-1px"></a><a href="https://darrenpig.github.io/" target="_blank"><img src="https://github.com/Darrenpig/darrenpig.github.io/blob/main/files/CIT_PV_Logo.png" height="70px" style="margin-bottom:-1px"></a>
+<a href="https://darrenpig.github.io/" target="_blank"><img src="https://github.com/Darrenpig/darrenpig.github.io/blob/main/files/CIT_Logo.png" height="70px" style="margin-bottom:-1px"></a><a href="https://darrenpig.github.io/" target="_blank"><img src="https://github.com/Darrenpig/darrenpig.github.io/blob/main/files/CIT_PV_Logo.png" height="70px" style="margin-bottom:-1px"></a><a href="https://darrenpig.github.io/" target="_blank"><img src="https://github.com/Darrenpig/darrenpig.github.io/blob/main/files/NEC_Logo.png" height="70px" style="margin-bottom:-1px"></a>
 </h1>
