@@ -22,29 +22,10 @@
   <a href="[https://twitter.com/darrenpig](https://x.com/PeiWei_Pig)" target="_blank"><img src="./files/icon/X_icon.png" height="30px" style="margin-bottom:-3px"></a>&nbsp;
   <a href="./files/my_wechat.jpg" target="_blank"><img src="./files/icon/wechat.png" height="30px" style="margin-bottom:-3px"></a>&nbsp;
   <a href="https://space.bilibili.com/438904165?spm_id_from=333.337.0.0" target="_blank"><img src="./files/icon/bilibili.png" height="30px" style="margin-bottom:-3px"></a>&nbsp;
-  <a href="https://www.zhihu.com/people/darrenpig" target="_blank"><img src="./files/icon/zhihu.png" height="30px" style="margin-bottom:-3px"></a>&nbsp; 
+  <a href="https://www.zhihu.com/people/zhu-pei-wei-93" target="_blank"><img src="./files/icon/zhihu.png" height="30px" style="margin-bottom:-3px"></a>&nbsp; 
   <a href="https://www.xiaohongshu.com/user/profile/62f2899b000000001f0074f1" target="_blank"><img src="./files/icon/xiaohongshu.png" height="31px" style="margin-bottom:-4px"></a>
   <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fdarrenpig.github.io%2F"><img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fdarrenpig.github.io%2F&label=Wacher%20Today&countColor=%23f47373" /></a>
 </p>
-# Project 项目【进行】
-
-Research Experience / Lab Experience / Graduate Fieldwork
-
-【清华大学新能源汽车（苏州）研究院 】[飞行汽车项目](https://gitee.com/darrenpig/new_energy_coder_club/issues/IC9NFY) RK3568 开发基线搭建 飞控 PX4 线上线下联调
-
-【Duma 人形机器人】全国大学生机器人大赛 [CIT-NEC](https://gitee.com/darrenpig/new_energy_coder_club) 技术领队，人形机器人投篮赛项目 嵌入式底软/全栈项管/领队
-
-【易百纳 WS63 星闪 BLE 透传】开源手柄，设计 (Fusion360 三维设计〕通信协议底软BSP 海鸥派，Bitbake、Yocto语言
-
-# Education 教育背景
-
-- 🔭 常州工学院-2022-至今
-- 🔭 我目前在攻读新能源科学与工程专业，并且从事相关基础软件的应用工作。 I’m currently working on New Energy Science and Engineering.
-- 🌱 悉尼大学现代工业设计【化工设计】A+ 2024 江苏省政府奖学金
-- 🌱 我目前正在学习 yocto-meta-openeuler 和 Rt-Thread（两款国内的操作系统社区）learning yocto-meta-openeuler and Rt-Thread 
-- 💬 2022 MIT blended learning SPOC【机器学习】最高奖学金
-- 💬 Ask me about嵌入式/新能源（Embedded/New Energy）
-- 📫 How to reach me: 22230635@czu.cn
 
 # Awards and Honors
 
@@ -60,22 +41,10 @@ Research Experience / Lab Experience / Graduate Fieldwork
 
 - 全省50人，跨高校、专业竞争合作，评分 A+
 
-# Non-Academic Activities (brief)
-
-- 非学术活动（简介）参与开源项目与技术组织MeetUp、Summit，30+
-- openEuler Summit；鲲鹏昇腾开发者大会；Rt-thread开发者大会。
-
-# Languages and Skills
-
-- 语言和技能 英语，中文普通话二乙，街头速写、博客Blogger
-
 ![C](https://img.shields.io/badge/-00599C?&logo=c&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-8fcfd1?&logo=Python)
 ![Shell](https://img.shields.io/badge/-Shell-blasck?&logo=Shell)
 ![VIM](https://img.shields.io/badge/-vim-blasck?&logo=vim)
-
-
-# Memberships
 
 - IEEE member，openEuler 社区 南京用户组 ambassador
 - new energy coder club 仓库 maintainer
