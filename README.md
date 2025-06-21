@@ -43,31 +43,77 @@
   <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fdarrenpig.github.io%2F"><img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fdarrenpig.github.io%2F&label=Wacher%20Today&countColor=%23f47373" /></a>
 </p>
 
-# Awards and Honors
-
-【教育部】2024 全国大学生机器人大赛ROBOCON赛项 国家级 三等奖 
-
-- 担任领队、项管，负责机器人上位机 BSP 到 ROS、下位机电驱、算法、气动SMC控制等，带队7天7夜，90+国内高校中预算最低的条件下，首次完赛
-
-【教育部、江苏省教育厅】2024全国大学生职业规划大赛 省决 银奖
-
-- I级A类，高等教育学会认定，校内700进6，省决赛6进1。结构化表达、PPT发布会级项目路演、可视化复盘
-
-【江苏省教育厅】2024年江苏省政府奖学金、2024境外交流奖学金
-
-- 全省50人，跨高校、专业竞争合作，评分 A+
-
-![C](https://img.shields.io/badge/-00599C?&logo=c&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-8fcfd1?&logo=Python)
-![Shell](https://img.shields.io/badge/-Shell-blasck?&logo=Shell)
-![VIM](https://img.shields.io/badge/-vim-blasck?&logo=vim)
-
-- IEEE member，openEuler 社区 南京用户组 ambassador
-- new energy coder club 仓库 maintainer
-- 📫 [![邮箱](https://img.shields.io/badge/我的邮箱-22230635@czu.cn-fedcba
-)](22230635@czu.cn)
-[![NXP-meta_freescale](https://img.shields.io/badge/NEC-maintianer-fedcba
-)](https://gitee.com/darrenpig/new_energy_coder_club)
-[![雪球计划](https://img.shields.io/badge/%E9%9B%AA%E7%90%83%E8%AE%A1%E5%88%92-issues%2FI90DOU-blue
-)](https://gitee.com/openeuler/yocto-meta-openeuler/issues/I90DOU#comment-loadder)
-- ✨ 开源项目仓库 https://gitee.com/darrenpig/new_energy_coder_club
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awards and Honors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .award {
+            margin-bottom: 20px;
+        }
+        .award-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .award-description {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        .badge {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .link {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Awards and Honors</h2>
+    <div class="award">
+        <div class="award-title">【教育部】2024 全国大学生机器人大赛ROBOCON赛项 国家级 三等奖</div>
+        <div class="award-description">- 担任领队、项管，负责机器人上位机 BSP 到 ROS、下位机电驱、算法、气动SMC控制等，带队7天7夜，90+国内高校中预算最低的条件下，首次完赛</div>
+    </div>
+    <div class="award">
+        <div class="award-title">【教育部、江苏省教育厅】2024全国大学生职业规划大赛 省决 银奖</div>
+        <div class="award-description">- I级A类，高等教育学会认定，校内700进6，省决赛6进1。结构化表达、PPT发布会级项目路演、可视化复盘</div>
+    </div>
+    <div class="award">
+        <div class="award-title">【江苏省教育厅】2024年江苏省政府奖学金、2024境外交流奖学金</div>
+        <div class="award-description">- 全省50人，跨高校、专业竞争合作，评分 A+</div>
+    </div>
+    <div class="skills">
+        <img class="badge" src="https://img.shields.io/badge/-00599C?&logo=c&logoColor=white" alt="C">
+        <img class="badge" src="https://img.shields.io/badge/-Python-8fcfd1?&logo=Python" alt="Python">
+        <img class="badge" src="https://img.shields.io/badge/-Shell-black?&logo=Shell" alt="Shell">
+        <img class="badge" src="https://img.shields.io/badge/-vim-black?&logo=vim" alt="VIM">
+    </div>
+    <div class="roles">
+        <div>IEEE member，openEuler 社区 南京用户组 ambassador</div>
+        <div>new energy coder club 仓库 maintainer</div>
+    </div>
+    <div class="contact-info">
+        <div>📫 <a href="mailto:22230635@czu.cn">我的邮箱</a></div>
+        <div><a href="https://gitee.com/darrenpig/new_energy_coder_club">NEC-maintianer</a></div>
+        <div><a href="https://gitee.com/openeuler/yocto-meta-openeuler/issues/I90DOU#comment-loadder">雪球计划</a></div>
+    </div>
+        <div class="open-source">
+        <div>✨ 开源项目仓库 <a href="https://gitee.com/darrenpig/new_energy_coder_club">https://gitee.com/darrenpig/new_energy_coder_club</a></div>
+    </div>
+</body>
+</html>
