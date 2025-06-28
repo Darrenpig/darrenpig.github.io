@@ -11,7 +11,6 @@
 <!-- 	<img src="https://github.com/Darrenpig/darrenpig.github.io/blob/main/files/CIT_Logo.png" height="70px" style="margin-bottom:-1px"></a>
 	<img src="https://github.com/Darrenpig/darrenpig.github.io/blob/main/files/CIT_PV_Logo.png" height="70px" style="margin-bottom:-1px"></a>
 	<img src="https://github.com/Darrenpig/darrenpig.github.io/blob/main/files/NEC_Logo.png" height="70px" style="margin-bottom:-1px"></a>
-		[<img align="right" width="400" src="https://github-readme-stats.vercel.app/api?username=DarrenPig&include_all_commits=true&theme=buefy&show_icons=true&count_private=true"/>](https://github.com/fan-ziqi/)
 --> 
 <p align="center">
   <a href="https://darrenpig.github.io/" target="_blank">
@@ -146,6 +145,49 @@
   ![Fusion360](https://img.shields.io/badge/-Fusion360-333333?style=flat&logo=autodesk)
 
 <h3> 🤝🏻 &nbsp;Connect with Me [22230635@czu.cn](http://22230635@czu.cn) </h3>
-
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Badges</title>
+<body>
+    <ul>
+        <li>
+            💻 &nbsp;
+            <img src="https://img.shields.io/badge/-Python-333333?style=flat&logo=python" alt="Python">
+            <img src="https://img.shields.io/badge/-C-333333?style=flat&logo=c&logoColor=007396" alt="C">
+            <img src="https://img.shields.io/badge/-C++-333333?style=flat&logo=c%2B%2B&logoColor=00599C" alt="C++">
+            <img src="https://img.shields.io/badge/-ROS-333333?style=flat&logo=ros" alt="ROS">
+            <img src="https://img.shields.io/badge/-ROS2-333333?style=flat&logo=ros2" alt="ROS2">
+        </li>
+        <li>
+            🌐 &nbsp;
+            <img src="https://img.shields.io/badge/-STM32-333333?style=flat&logo=stmicroelectronics" alt="STM32">
+            <img src="https://img.shields.io/badge/-C51-333333?style=flat" alt="C51">
+            <img src="https://img.shields.io/badge/-esp8266-333333?style=flat&logo=esphome" alt="esp8266">
+            <img src="https://img.shields.io/badge/-esp32-333333?style=flat&logo=esphome" alt="esp32">
+            <img src="https://img.shields.io/badge/-arduino-333333?style=flat&logo=arduino" alt="arduino">
+        </li>
+        <li>
+            ⚙️ &nbsp;
+            <img src="https://img.shields.io/badge/-Git-333333?style=flat&logo=git" alt="Git">
+            <img src="https://img.shields.io/badge/-GitHub-333333?style=flat&logo=github" alt="GitHub">
+            <img src="https://img.shields.io/badge/-Markdown-333333?style=flat&logo=markdown" alt="Markdown">
+        </li>
+        <li>
+            🔧 &nbsp;
+            <img src="https://img.shields.io/badge/-Visual%20Studio%20Code-333333?style=flat&logo=visual-studio-code&logoColor=007ACC" alt="Visual Studio Code">
+            <img src="https://img.shields.io/badge/-Sublime-333333?style=flat&logo=sublimetext" alt="Sublime">
+            <img src="https://img.shields.io/badge/-Keil-333333?style=flat&logo=arm" alt="Keil">
+            <img src="https://img.shields.io/badge/-Clion-333333?style=flat&logo=clion" alt="Clion">
+        </li>
+        <li>
+            🖥 &nbsp;
+            <img src="https://img.shields.io/badge/-Altium%20Designer-333333?style=flat&logo=altiumdesigner" alt="Altium Designer">
+            <img src="https://img.shields.io/badge/-SolidWorks-333333?style=flat&logo=solidworks" alt="SolidWorks">
+            <img src="https://img.shields.io/badge/-MATLAB-333333?style=flat&logo=mathworks" alt="MATLAB">
+            <img src="https://img.shields.io/badge/-Fusion360-333333?style=flat&logo=autodesk" alt="Fusion360">
+        </li>
+    </ul>
+</body>
 </html>
