@@ -109,6 +109,7 @@
     </div>
     <div class="contact-info">
         <div>📫 <a href="mailto:22230635@czu.cn">我的邮箱</a></div>
+	<img src="https://img.shields.io/badge/Matebook14%20U7_32G-0071C5?style=for-the-badge&logo=intel&logoColor=white" alt="windows">
         <div><a href="https://gitee.com/darrenpig/new_energy_coder_club">NEC-maintianer</a></div>
         <div><a href="https://gitee.com/openeuler/yocto-meta-openeuler/issues/I90DOU#comment-loadder">雪球计划</a></div>
     </div>
@@ -117,10 +118,6 @@
     </div>
 </body>
  <h3> 🤝🏻 &nbsp;Connect with Me 22230635@czu.cn 📫</h3>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
     <ul>
         <li>
@@ -133,32 +130,31 @@
         </li>
         <li>
             🌐 &nbsp;
-            <img src="https://img.shields.io/badge/-STM32-333333?style=flat&logo=stmicroelectronics" alt="STM32">
-            <img src="https://img.shields.io/badge/-C51-333333?style=flat" alt="C51">
+            <img src="https://img.shields.io/badge/-STM32-333333?style=flat&logo=stmicroelectronics" alt="STM32C8T6">
             <img src="https://img.shields.io/badge/-esp8266-333333?style=flat&logo=esphome" alt="esp8266">
-            <img src="https://img.shields.io/badge/-esp32-333333?style=flat&logo=esphome" alt="esp32">
-            <img src="https://img.shields.io/badge/-arduino-333333?style=flat&logo=arduino" alt="arduino">
+            <img src="https://img.shields.io/badge/-esp32-333333?style=flat&logo=esphome" alt="esp32-S3">
+            <img src="https://img.shields.io/badge/-arduino-333333?style=flat&logo=arduino" alt="arduino-mega2560">
         </li>
         <li>
             ⚙️ &nbsp;
-            <img src="https://img.shields.io/badge/-Git-333333?style=flat&logo=git" alt="Git">
-            <img src="https://img.shields.io/badge/-GitHub-333333?style=flat&logo=github" alt="GitHub">
-            <img src="https://img.shields.io/badge/-Markdown-333333?style=flat&logo=markdown" alt="Markdown">
+            <img src="https://img.shields.io/badge/Git-black?logo=git" alt="Git">
+            <img src="https://img.shields.io/badge/Github-100000.svg?logo=github&logoColor=white" alt="GitHub">
+            <img src="https://img.shields.io/badge/Markdown-000000.svg?logo=markdown&logoColor=white" alt="Markdown">
         </li>
         <li>
             🔧 &nbsp;
-            <img src="https://img.shields.io/badge/-Visual%20Studio%20Code-333333?style=flat&logo=visual-studio-code&logoColor=007ACC" alt="Visual Studio Code">
-            <img src="https://img.shields.io/badge/-Sublime-333333?style=flat&logo=sublimetext" alt="Sublime">
+            <img src="https://img.shields.io/badge/-Visual%20Studio%20Code-333333?style=flat&logo=visual-studio-code&logoColor=007ACC" alt="Visual Studio Code"><img src="https://img.shields.io/badge/Shell_script-121011.svg?logo=gnu-bash&logoColor=white" alt="Shell">
             <img src="https://img.shields.io/badge/-Keil-333333?style=flat&logo=arm" alt="Keil">
             <img src="https://img.shields.io/badge/-Clion-333333?style=flat&logo=clion" alt="Clion">
-        </li>
+	</li> 
         <li>
             🖥 &nbsp;
-            <img src="https://img.shields.io/badge/-Altium%20Designer-333333?style=flat&logo=altiumdesigner" alt="Altium Designer">
-            <img src="https://img.shields.io/badge/-SolidWorks-333333?style=flat&logo=solidworks" alt="SolidWorks">
-            <img src="https://img.shields.io/badge/-MATLAB-333333?style=flat&logo=mathworks" alt="MATLAB">
-            <img src="https://img.shields.io/badge/-Fusion360-333333?style=flat&logo=autodesk" alt="Fusion360">
-        </li>
+            <img src="https://img.shields.io/badge/-JLC_EDA-00599C?style=flat&logo=lceda" alt="lceda">
+            <img src="https://img.shields.io/badge/-Rhino_8-333333?style=flat&logo=Rhino" alt="Rhino">
+            <img src="https://img.shields.io/badge/-MATLAB-00599C?style=flat&logo=mathworks" alt="MATLAB">
+            <img src="https://img.shields.io/badge/-Inventor-333333?style=flat&logo=autodesk" alt="Inventor">
+	    <img src="https://img.shields.io/badge/VMware-231f20?style=for-the-badge&logo=VMware&logoColor=white" alt="VMware">
+  	</li>
     </ul>
 </body>
 </html>
