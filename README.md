@@ -116,12 +116,11 @@
         <div>✨ 开源项目仓库 <a href="https://gitee.com/darrenpig/new_energy_coder_club">https://gitee.com/darrenpig/new_energy_coder_club</a></div>
     </div>
 </body>
- <h3> 🤝🏻 &nbsp;Connect with Me [22230635@czu.cn](http://22230635@czu.cn) </h3>
+ <h3> 🤝🏻 &nbsp;Connect with Me 22230635@czu.cn 📫</h3>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills Badges</title>
 <body>
     <ul>
         <li>
