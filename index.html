@@ -1,42 +1,64 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN""http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<!-- saved from url=(0028)https://mayuelala.github.io/ -->
-<!-- saved from url=(0028)https://TianxingChen.github.io/ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- DarrenPig个人主页 - 朱佩韦的学术个人网站 -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+    <!-- 基础页面配置 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="shortcut icon" href="files/icon.jpg">
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    
+    <!-- SEO优化配置 -->
     <meta name="keywords" content="DarrenPig, Zhu PeiWei, CIT, Changzhou Institute of Technology">
     <meta name="description" content="DarrenPig's Home">
     <meta name="google-site-verification" content="yy_3iiS_X6pJdegdwitJMrH0LRLHXwpjrV9RKLXxKjg" />
-    <meta name="google-site-verification" content="yy_3iiS_X6pJdegdwitJMrH0LRLHXwpjrV9RKLXxKjg" />
-    <title>Darren Pig (朱佩韦) </title>
+    
+    <title>Darren Pig (朱佩韦) - Personal Homepage</title>
     <style>
-        /* Github风格主题样式 */
+        /* ========== 主题配置 ========== */
+        /* 浅色主题CSS变量定义 */
         :root {
-            --bg-color: #ffffff;
-            --text-color: #24292f;
-            --border-color: #d0d7de;
-            --link-color: #0969da;
-            --header-bg: #f6f8fa;
-            --shadow: 0 1px 3px rgba(0,0,0,0.12);
+            --bg-color: #ffffff;        /* 背景色 */
+            --text-color: #24292f;      /* 文字颜色 */
+            --border-color: #d0d7de;    /* 边框颜色 */
+            --link-color: #0969da;      /* 链接颜色 */
+            --header-bg: #f6f8fa;       /* 头部背景色 */
+            --shadow: 0 1px 3px rgba(0,0,0,0.12); /* 阴影效果 */
         }
         
+        /* 深色主题CSS变量定义 */
         [data-theme="dark"] {
-            --bg-color: #0d1117;
-            --text-color: #f0f6fc;
-            --border-color: #30363d;
-            --link-color: #58a6ff;
-            --header-bg: #161b22;
-            --shadow: 0 1px 3px rgba(0,0,0,0.5);
+            --bg-color: #0d1117;        /* 深色背景 */
+            --text-color: #f0f6fc;      /* 深色模式文字 */
+            --border-color: #30363d;    /* 深色边框 */
+            --link-color: #58a6ff;      /* 深色模式链接 */
+            --header-bg: #161b22;       /* 深色头部背景 */
+            --shadow: 0 1px 3px rgba(0,0,0,0.5); /* 深色阴影 */
         }
         
+        /* ========== 基础样式 ========== */
+        /* 标准字体大小定义 */
+        :root {
+            --font-size-small: 12px;   /* 小号字体 */
+            --font-size-medium: 14px;  /* 中号字体 */
+            --font-size-large: 16px;   /* 大号字体 */
+        }
+        
+        /* 标准字体族定义 - 确保兼容性和一致性 */
+        :root {
+            --font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+            --font-secondary: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            --font-monospace: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, "Courier New", monospace;
+        }
+        
+        /* 页面主体样式 */
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
             transition: background-color 0.3s ease, color 0.3s ease;
-            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+            font-family: var(--font-primary);
+            font-size: var(--font-size-medium); /* 默认中号字体 */
         }
         
+        /* 主内容区域布局 */
         #layout-content {
             background-color: var(--bg-color);
             border: 1px solid var(--border-color);
@@ -47,12 +69,14 @@
             max-width: 1200px;
         }
         
+        /* 标题样式 */
         h1, h2, h3 {
             color: var(--text-color);
             border-bottom: 1px solid var(--border-color);
             padding-bottom: 10px;
         }
         
+        /* 链接样式 */
         a {
             color: var(--link-color);
             text-decoration: none;
@@ -62,6 +86,8 @@
             text-decoration: underline;
         }
         
+        /* ========== 主题切换功能 ========== */
+        /* 主题切换按钮样式 */
         .theme-toggle {
             position: fixed;
             top: 20px;
@@ -71,7 +97,7 @@
             border-radius: 6px;
             padding: 8px 12px;
             cursor: pointer;
-            font-size: 14px;
+            font-size: var(--font-size-medium);
             color: var(--text-color);
             transition: all 0.3s ease;
             z-index: 1000;
@@ -81,25 +107,31 @@
             background-color: var(--border-color);
         }
         
+        /* ========== Logo和图片样式 ========== */
+        /* Logo容器布局 */
         .logo-container {
             display: flex;
             align-items: center;
             gap: 15px;
         }
         
+        /* 主题相关Logo样式 */
         .theme-logo {
             height: 60px;
             transition: opacity 0.3s ease;
         }
         
+        /* 浅色主题Logo显示控制 */
         .light-logo {
             display: block;
         }
         
+        /* 深色主题Logo显示控制 */
         .dark-logo {
             display: none;
         }
         
+        /* 深色模式下Logo切换 */
         [data-theme="dark"] .light-logo {
             display: none;
         }
@@ -108,22 +140,32 @@
             display: block;
         }
         
+        /* ========== 表格和布局样式 ========== */
+        /* 表格基础样式 */
         table {
             border-collapse: collapse;
         }
+        
+        /* 小尺寸图片样式 */
         .smaller-image {
             width: 20%;
         }
+        
+        /* ========== 媒体容器样式 ========== */
+        /* 通用容器样式 */
         .container {
             position: relative;
             display: inline-block;
         }
 
+        /* 图片基础样式 */
         .image {
             display: block;
             border-radius: 10px;
             max-width: 100%;
         }
+        
+        /* 视频标签样式 */
         .video-label {
             position: absolute;
             top: 5px;
@@ -139,14 +181,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size:small;
+            font-size: var(--font-size-small);
         }
+        /* 研究亮点网格布局 */
         .research-hightlight {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 5列 */
-            /* grid-template-rows: repeat(4, 1fr);  */
+            grid-template-columns: repeat(3, 1fr); /* 3列网格布局 */
             gap: 10px; /* 网格项之间的间隙 */
         }
+        
+        /* ArXiv论文标签样式 */
         .arxiv-label {
             position: absolute;
             top: 10px;
@@ -162,182 +206,275 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size:x-small;
+            font-size: var(--font-size-small);
         }
     </style>
+    <!-- ========== JavaScript功能 ========== -->
     <script>
-        // 主题切换功能
+        /**
+         * 主题切换功能
+         * 在浅色和深色主题之间切换，并保存用户偏好到本地存储
+         */
         function toggleTheme() {
             const body = document.body;
             const currentTheme = body.getAttribute('data-theme');
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
             
+            // 应用新主题
             body.setAttribute('data-theme', newTheme);
+            // 保存主题偏好到本地存储
             localStorage.setItem('theme', newTheme);
         }
         
-        // 页面加载时应用保存的主题
+        /**
+         * 页面加载时应用保存的主题
+         * 从本地存储读取用户的主题偏好，默认为浅色主题
+         */
         document.addEventListener('DOMContentLoaded', function() {
             const savedTheme = localStorage.getItem('theme') || 'light';
             document.body.setAttribute('data-theme', savedTheme);
         });
     </script>
+    
+    <!-- Google站点验证 -->
     <meta name="google-site-verification" content="RmRCKoAXAT6rtzTsOTkyvuJiKVINXoP9VDPktJ0Hl3Q" />
 
 </head>
-<body data-new-gr-c-s-check-loaded="14.1163.0" data-gr-ext-installed="">
-<div id="layout-content" style="margin-top:25px">
-    <a href="https://github.com/darrenpig" class="github-corner"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#DC143C; color:#fff; position: absolute; top: 0; border: 0; right: 0;"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
-    <table>
-        <tbody>
-        <tr>
-            <td width="720">
-                <div class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</div>
-                <div id="toptitle">
-                    <h1>DarrenPig (朱佩韦)  </h1>
-                    <div class="logo-container">
-                        <img src="./files/常州工学院.png" alt="" class="theme-logo light-logo" style="height: 60px;">
-                        <img src="./files/CIT_Logo.png" alt="" class="theme-logo dark-logo" style="height: 60px;">
-                        <img src="./files/NEC_Logo.png" alt="" style="height: 60px;">
+<!-- ========== 页面主体 ========== -->
+<body data-new-gr-c-s-check-loaded="14.1163.0" data-gr-ext-installed="">
+    <!-- 主内容容器 -->
+    <div id="layout-content" style="margin-top:25px">
+        <!-- GitHub角标链接 -->
+        <a href="https://github.com/darrenpig" class="github-corner">
+            <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#DC143C; color:#fff; position: absolute; top: 0; border: 0; right: 0;">
+                <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+                <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+            </svg>
+        </a>
+        
+        <!-- GitHub角标动画样式 -->
+        <style>
+            .github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}
+            @keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}
+            @media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
+        </style>
+
+        <!-- ========== 个人信息主表格 ========== -->
+        <table>
+            <tbody>
+            <tr>
+                <!-- 左侧：个人信息和联系方式 -->
+                <td width="720">
+                    <!-- 主题切换按钮 -->
+                    <div class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</div>
+                    
+                    <!-- 页面标题和Logo -->
+                    <div id="toptitle">
+                        <h1>DarrenPig ( 常州工 朱佩韦 )</h1>
+                        <!-- 机构Logo容器 -->
+                        <div class="logo-container">
+                            <!-- 常州工学院Logo（浅色主题） -->
+                            <img src="./files/常州工学院.png" alt="CIT Logo Light" class="theme-logo light-logo" style="height: 60px;">
+                            <!-- 常州工学院Logo（深色主题） -->
+                            <img src="./files/CIT_Logo.png" alt="CIT Logo Dark" class="theme-logo dark-logo" style="height: 60px;">
+                            <!-- 新能源编程俱乐部Logo（主题切换） -->
+                            <img src="./files/NEC_Logo_bluck.png" alt="NEC Logo Light" class="theme-logo light-logo" style="height: 60px;">
+                            <img src="./files/NEC_Logo-white.png" alt="NEC Logo Dark" class="theme-logo dark-logo" style="height: 60px;">
+                        </div>
                     </div>
-                    <div style="margin-top: 15px; text-align: center;">
-                        <img src="./files/sign-light.jpg" alt="Signature" class="theme-logo light-logo" style="width: auto; height: 60px;">
-                        <img src="./files/sign-dark.png" alt="Signature" class="theme-logo dark-logo" style="width: auto; height: 60px;">
-                    </div>
-                </div>
-                <h3 style="margin-top: 20px;">🎓 Final Year Undergraduate Student @ CIT</h3>
-                <h3 style="margin-top: -10px;">🦾 openEuler & RT-Thread Embedded Developer</h3>
-                <h3 style="margin-top: -10px;">🧸 maintainer of new_energy_coder_club</h3>
-                <p  style="margin-top: 20px;">
-                    <!-- Computer Science and Technology,
-                    <a href="https://csse.szu.edu.cn/" target="_blank">CSSE</a>,<br>
-                    <a href="https://en.szu.edu.cn/" target="_blank">Shenzhen University (SZU)</a><br> -->
-                  
-                    <!-- <br></a>&nbsp;
-                    <p></p> -->
-                    <a href="mailto:darrenpig666@gmail.com" target="_blank"><img src="./files/icon/email.png" height="30px" style="margin-bottom:-3px"></a>&nbsp;
-                    <a href="https://scholar.google.com/citations?hl=en&user=pvS8MH8AAAAJ&view_op=list_works&gmla=AOAOcb35IyZHtGmmYcpnDrJFmcsHLBXzjnq0ChbL0CXg4-PjM5UXRspLHuzXI4jgPc077WejF7RSsLUULIZ5ugIxcns6FURGdnTSpPi9JhAeKfhLVXsAIauozmPDdYzcku8VruOeRoapXM7nhkTlaNQ&iaan=Tianxing+Chen" target="_blank"><img src="./files/icon/google_scholar.png" height="30px" style="margin-bottom:-3px"></a>&nbsp;
-                    <a href="https://github.com/Darrenpig" target="_blank">
-                        <img src="./files/icon/github-mark.png" alt="GitHub" height="30px" style="margin-bottom:-3px">
-                    <a href="./files/my_wechat.png" target="_blank"><img src="./files/icon/wechat.png" height="30px" style="margin-bottom:-3px"></a>&nbsp;
-                    <a href="https://space.bilibili.com/438904165?spm_id_from=333.337.0.0" target="_blank"><img src="./files/icon/bilibili.png" height="30px" style="margin-bottom:-3px"></a>&nbsp;
-                    <a href="https://www.zhihu.com/people/zhu-pei-wei-93" target="_blank"><img src="./files/icon/zhihu.png" height="30px" style="margin-bottom:-3px"></a>&nbsp;
-                    <a href="https://www.xiaohongshu.com/user/profile/62f2899b000000001f0074f1" target="_blank"><img src="./files/icon/xiaohongshu.png" height="30px" style="margin-bottom:-3px"></a>&nbsp;
-                    <a href="./files/Peiwei. Zhu-resume.pdf" target="_blank"><img src="./files/icon/resume.png" height="30px" style="margin-bottom:-3px"></a>
-                    <a href="./files/朱佩韦-中文简历.pdf" target="_blank"><img src="./files/icon/jianli.png" height="30px" style="margin-bottom:-3px"></a>
-                    <a href="https://darrenpig.blog.csdn.net" target="_blank"><img src="./files/icon/CSDN.png" height="30px" style="margin-bottom:-3px"></a><br>
-                    <!-- <a href="https://drive.google.com/file/d/1PKS9U8kX0m4w7jEmpDMK8S3hFe5x3c0L/view">[Resume]</a>&nbsp;<a href="https://drive.google.com/file/d/1PKS9U8kX0m4w7jEmpDMK8S3hFe5x3c0L/view">[中文简历]</a> -->
-                <p></p>
-                <!-- <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ftianxingchen.github.io&count_bg=%233FDBD2&title_bg=%233D62C7&icon=googlepodcasts.svg&icon_color=%23E9F742&title=Page+Viewers&edge_flat=false"/></a> -->
-                <a href="https://visitorbadge.io/status?path=https%3A%2F%2Ftianxingchen.github.io%2F"><img src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Ftianxingchen.github.io%2F&labelColor=%232ccce4&countColor=%230158f9" /></a>
-                <!-- <img alt="X (formerly Twitter) Follow" src="https://img.shields.io/twitter/follow/MarioChan2002"> -->
-                <img alt="GitHub User's stars" src="https://img.shields.io/github/stars/darrenpig">
-                <img alt="GitHub followers" src="https://img.shields.io/github/followers/darrenpig">
-                </p>
-            </td>
-            <td>
-                <!-- <img src="./files/avatar12.jpg" border="0" width="250"><br> -->
-                <img src="./files/avatar/avatar14.jpg" border="0" width="250"><br>
-                <!-- <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fchen-tianxing.github.io&count_bg=%2321E0D7&title_bg=%23245DD3&icon=github.svg&icon_color=%23E7E7E7&title=Visits+%28today+%2F+total%29&edge_flat=false"/></a> -->
+                    
+                    <!-- 个人身份标签 -->
+                    <h3 style="margin-top: 20px;">🎓 Final Year Undergraduate Student @ CIT</h3>
+                    <h3 style="margin-top: -10px;">🦾 openEuler & RT-Thread Embedded Developer</h3>
+                    <h3 style="margin-top: -10px;">🧸 maintainer of new_energy_coder_club</h3>
+                    <!-- 联系方式和社交媒体链接 -->
+                    <p style="margin-top: 20px;">
+                        <!-- 邮箱联系 -->
+                        <a href="mailto:22230635@czu.cn" target="_blank">
+                            <img src="./files/icon/email.png" height="30px" style="margin-bottom:-3px" alt="Email">
+                        </a>&nbsp;
+                        
+                        <!-- Google Scholar -->
+                        <a href="https://scholar.google.com/citations?hl=en&user=pvS8MH8AAAAJ&view_op=list_works&gmla=AOAOcb35IyZHtGmmYcpnDrJFmcsHLBXzjnq0ChbL0CXg4-PjM5UXRspLHuzXI4jgPc077WejF7RSsLUULIZ5ugIxcns6FURGdnTSpPi9JhAeKfhLVXsAIauozmPDdYzcku8VruOeRoapXM7nhkTlaNQ&iaan=Tianxing+Chen" target="_blank">
+                            <img src="./files/icon/google_scholar.png" height="30px" style="margin-bottom:-3px" alt="Google Scholar">
+                        </a>&nbsp;
+                        
+                        <!-- GitHub -->
+                        <a href="https://github.com/Darrenpig" target="_blank">
+                            <img src="./files/icon/github-mark.png" alt="GitHub" height="30px" style="margin-bottom:-3px">
+                        </a>&nbsp;
+                        
+                        <!-- 微信 -->
+                        <a href="./files/my_wechat.png" target="_blank">
+                            <img src="./files/icon/wechat.png" height="30px" style="margin-bottom:-3px" alt="WeChat">
+                        </a>&nbsp;
+                        
+                        <!-- 哔哩哔哩 -->
+                        <a href="https://space.bilibili.com/438904165?spm_id_from=333.337.0.0" target="_blank">
+                            <img src="./files/icon/bilibili.png" height="30px" style="margin-bottom:-3px" alt="Bilibili">
+                        </a>&nbsp;
+                        
+                        <!-- 知乎 -->
+                        <a href="https://www.zhihu.com/people/zhu-pei-wei-93" target="_blank">
+                            <img src="./files/icon/zhihu.png" height="30px" style="margin-bottom:-3px" alt="Zhihu">
+                        </a>&nbsp;
+                        
+                        <!-- 小红书 -->
+                        <a href="https://www.xiaohongshu.com/user/profile/62f2899b000000001f0074f1" target="_blank">
+                            <img src="./files/icon/xiaohongshu.png" height="30px" style="margin-bottom:-3px" alt="XiaoHongShu">
+                        </a>&nbsp;
+                        
+                        <!-- 英文简历 -->
+                        <a href="./files/Peiwei. Zhu-resume.pdf" target="_blank">
+                            <img src="./files/icon/resume.png" height="30px" style="margin-bottom:-3px" alt="Resume">
+                        </a>
+                        
+                        <!-- 中文简历 -->
+                        <a href="./files/朱佩韦-中文简历.pdf" target="_blank">
+                            <img src="./files/icon/jianli.png" height="30px" style="margin-bottom:-3px" alt="中文简历">
+                        </a>
+                        
+                        <!-- CSDN博客 -->
+                        <a href="https://darrenpig.blog.csdn.net" target="_blank">
+                            <img src="./files/icon/CSDN.png" height="30px" style="margin-bottom:-3px" alt="CSDN">
+                        </a><br>
+                    
+                        
+                        <!-- 统计徽章区域 -->
+                        <p></p>
+                        <!-- 访问统计徽章 -->
+                        <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fdarrenpig.github.io%2F">
+                            <img src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fdarrenpig.github.io%2F&labelColor=%232ccce4&countColor=%230158f9" alt="Visitor Badge" />
+                        </a>
+                        
+                        <!-- GitHub统计徽章 -->
+                        <img alt="GitHub User's stars" src="https://img.shields.io/github/stars/darrenpig">
+                        <img alt="GitHub followers" src="https://img.shields.io/github/followers/darrenpig">
+                    </p>
+                </td>
+                
+                <!-- 右侧：头像和签名 -->
+                <td>
+                    <div style="text-align: center;">
+                        <!-- 个人头像 -->
+                        <img src="./files/photo/DarrenPig_Photo4.jpg" border="0" width="250" alt="DarrenPig Avatar"><br>
+                        
+                        <!-- 个人签名（主题切换） -->
+                        <div style="margin-top: 10px;">
+                            <!-- 浅色主题签名 -->
+                            <img src="./files/sign-light.jpg" alt="Signature Light" class="theme-logo light-logo" style="width: 250px; height: auto;">
+                            <!-- 深色主题签名 -->
+                            <img src="./files/sign-dark.png" alt="Signature Dark" class="theme-logo dark-logo" style="width: 250px; height: auto;">
+                        </div>
+                    </div><br>
+                
                 <!-- <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftianxingchen&count_bg=%238710FF&title_bg=%23E140D1&icon=&icon_color=%23E7E7E7&title=Github+Viewers&edge_flat=false"/></a><br>
                 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftianxingchen&count_bg=%23D5FF10&title_bg=%2340E1AB&icon=&icon_color=%23E7E7E7&title=Google+Scholar+Viewers&edge_flat=false"/></a> -->
-                <!-- <img src="https://img.shields.io/github/stars/tianxingchen?style=social" alt="GitHub stars"> -->
-                <!-- <br> -->
+                
             </td>
         </tr><tr>
         </tr></tbody>
     </table>
 
+    <!-- 个人简介部分 -->
     <h2 style="margin-top: -10px;">Biography</h2>
-    <div style="font-size: 15px">
+    <div style="font-size: var(--font-size-large)">
+        <!-- 基本信息介绍 -->
         Hi! I am <strong>Darren Pig (Chinese name：朱佩韦)</strong>, currently a <u>a Final year undergraduate student</u> majoring in New Energy Science and Engineering at Changzhou Institute of Technology and leading research at <a href="https://gitee.com/darrenpig/new_energy_coder_club" target="_blank">NECLab@CIT</a>, supervised by <a href="https://gdxy.czu.cn/2025/0317/c9891a156178/page.htm" target="_blank">Prof. Siwen Gu</a>. I once working with <a href="https://gitee.com/pai_666">Puai</a>.<br><br>
 
+        <!-- 获奖经历 -->
         I have won a silver medal in the <strong>National College Students' Career Planning Competition</strong> Jiangsu Regional Finals and three national Third Prize in the National College Students' Robot Competition <strong>ROBOCON</strong>robotics competition. I also being the youngest to hold the position <strong>(The domestic market share of server operating systems exceeds over 50% in China)<a href="https://www.openeuler.org/zh/community/user-group/detail/?name=南京">openEuler Nanjing ambassador</a></strong> and <strong>"Excellent Reading Star of CIT(读者之星)"</strong> which was the recipient of the highest honor in reading for undergraduate students at CIT (rk 1/900).<br><br>
 
+        <!-- 研究兴趣 -->
         My research interests mainly focus on <b>Embedded BSP (嵌入式板载操作系统) | Robotic (机器人学) | Embodied AI (具身智能)</b>, especially on Robotic RTOS control (机器人运行时控制), Yocto customized operating system (操作系统移植) and Humanoid Robot Embedded Develop (人形机器人嵌入式开发).<br><br>
 
+        <!-- 博客信息 -->
         I am also a Blogger with over 5k followers at [CSDN](https://darrenpig.blog.csdn.net/).<br><br>
-        <i style="color: red; display: inline;">Feel free to contact me by email if you are interested in discussing or collaborating with me.</i>
+        
+        <!-- 联系方式提示 -->
+        <i style="color: #DC143C; font-weight: bold; display: inline;">Feel free to contact me by email if you are interested in discussing or collaborating with me.</i>
     </div>
 
+    <!-- 新闻动态部分 -->
     <h2>News</h2>
     <div style="width: 100%; background-color: white;">
+        <!-- 新闻图片横向滚动容器 -->
         <div style="width: 100%; overflow-x: scroll; white-space: nowrap;">
-            <img src="files/news1.jpg" style="width: auto; height: 80px;">
-            <img src="files/news2.jpg" style="width: auto; height: 80px;">
-            <img src="files/news3.jpg" style="width: auto; height: 80px;">
-            <img src="files/news4.jpg" style="width: auto; height: 80px;">
-            <img src="files/news5.jpg" style="width: auto; height: 80px;">
-            <img src="files/news6.jpg" style="width: auto; height: 80px;">
-            <img src="files/news7.jpg" style="width: auto; height: 80px;">
-            <img src="files/news8.jpg" style="width: auto; height: 80px;">
-            <img src="files/news9.jpg" style="width: auto; height: 80px;">
-            <img src="files/news10.jpg" style="width: auto; height: 80px;">
-            <img src="files/news11.jpg" style="width: auto; height: 80px;">
-            <img src="files/news12.jpg" style="width: auto; height: 80px;">
-
+            <img src="files/news1.jpg" style="width: auto; height: 80px;" alt="News 1">
+            <img src="files/news2.jpg" style="width: auto; height: 80px;" alt="News 2">
+            <img src="files/news3.jpg" style="width: auto; height: 80px;" alt="News 3">
+            <img src="files/news4.jpg" style="width: auto; height: 80px;" alt="News 4">
+            <img src="files/news5.jpg" style="width: auto; height: 80px;" alt="News 5">
+            <img src="files/news6.jpg" style="width: auto; height: 80px;" alt="News 6">
+            <img src="files/news7.jpg" style="width: auto; height: 80px;" alt="News 7">
+            <img src="files/news8.jpg" style="width: auto; height: 80px;" alt="News 8">
+            <img src="files/news9.jpg" style="width: auto; height: 80px;" alt="News 9">
+            <img src="files/news10.jpg" style="width: auto; height: 80px;" alt="News 10">
+            <img src="files/news11.jpg" style="width: auto; height: 80px;" alt="News 11">
+            <img src="files/news12.jpg" style="width: auto; height: 80px;" alt="News 12">
         </div>
     </div>
-    <div style="margin-top: 5px; font-size: small; margin-bottom: 0px;">⬅ scrollable</div>
+    <!-- 滚动提示 -->
+    <div style="margin-top: 5px; font-size: var(--font-size-small); margin-bottom: 0px;">⬅ scrollable</div>
+    <!-- 视频展示部分 -->
     <h2>Video</h2>
     <div style="width: 100%;  background-color: white;">
+        <!-- 视频缩略图横向滚动容器 -->
         <div style="width: 100%; overflow-x: scroll; white-space: nowrap;">
-            <!-- ###### -->
-<!--            <img src="./files/photo/2025-graduation.jpg" style="width: auto; height: 80px;">-->
-<!--            <img src="./files/photo/highlight/2025-lz-2.jpg" style="width: auto; height: 80px;">-->
-<!--            <img src="./files/photo/highlight/2025-lz.jpg" style="width: auto; height: 80px;">-->
-<!--            <img src="./files/photo/2024-szu_open_day.jpg" style="width: auto; height: 80px;">-->
+            
+            <!-- BB8机器人视频 -->
             <div class="container">
                 <a href="https://www.bilibili.com/video/BV1PV4y197Zo/" target="_blank">
-                    <img src="./files/photo/highlight/BB8.jpg" style="width: auto; height: 80px;">
+                    <img src="./files/photo/highlight/BB8.jpg" style="width: auto; height: 80px;" alt="BB8 Robot Video">
                     <div class="video-label">Video</div>
                 </a>
             </div>
+            
+            <!-- RC机器人竞赛视频 -->
             <div class="container">
                 <a href="https://findermp.video.qq.com/251/20304/stodownload?encfilekey=rjD5jyTuFrIpZ2ibE8T7Ym3K77SEULgkiat3XCKUy0vm2UqEic36hKTZ0Xr7c4cKNsEQPicRPkHLcf6PXer86B0STrTGYwiaPEib6XHoibv8FVicBDt6Lic7PYkBXag" target="_blank">
-                    <img src="./files/photo/highlight/RC.jfif" style="width: auto; height: 80px;">
+                    <img src="./files/photo/highlight/RC.jfif" style="width: auto; height: 80px;" alt="RC Robot Competition Video">
                     <div class="video-label">Video</div>
                 </a>
             </div>
+            
+            <!-- 2024年RC竞赛视频 -->
             <div class="container">
                 <a href="https://www.bilibili.com/video/BV19KHQejEms/" target="_blank">
-                    <img src="./files/photo/highlight/2024RC3.png" style="width: auto; height: 80px;">
+                    <img src="./files/photo/highlight/2024RC3.png" style="width: auto; height: 80px;" alt="2024 RC Competition Video">
                     <div class="video-label">Video</div>
                 </a>
             </div>
+            
+            <!-- 会议视频 -->
             <div class="container">
                 <a href="https://findermp.video.qq.com/251/20304/stodownload?encfilekey=rjD5jyTuFrIpZ2ibE8T7Ym3K77SEULgkiadRbXkgvvXClL0WCW2lJB2Nmt0MtrOhcgsVpgC7xKYDjUfGaBJ1ZBsx8kdicBzy6ichnYBcfzQ4Gda4Pe3T5Kc94Q&amp;token=2lt8WBSnjTlCHacIkDPXCO6WsXSKPGW00QKrHzOJubY5zHcWYeMbLOmcYwRGHDjicCD9qr25En4lkLC51WVPQfSLTb6cSlxbbYOXEMm8Ix3icM6yIb9daD4mUM7IykicbAK4cUuYwIUuAiaUHL2iaXfWGhnc1iaXSoI6xoBdRibpK0MmZg&amp;idx=1&amp;dotrans=0&amp;hy=SZ&amp;m=&amp;scene=2&amp;uzid=2" target="_blank">
-                    <img src="./files/photo/highlight/meet.png" style="width: auto; height: 80px;">
+                    <img src="./files/photo/highlight/meet.png" style="width: auto; height: 80px;" alt="Meeting Video">
                     <div class="video-label">Video</div>
                 </a>
             </div>
+            
+            <!-- SYD项目视频 -->
             <div class="container">
                 <a href="https://www.bilibili.com/video/BV1hgHQeCEQu/" target="_blank">
-                    <img src="./files/photo/highlight/SYD-DSC00103.png" style="width: auto; height: 80px;">
+                    <img src="./files/photo/highlight/SYD-DSC00103.png" style="width: auto; height: 80px;" alt="SYD Project Video">
                     <div class="video-label">Video</div>
                 </a>
             </div>
+            
+            <!-- Duma项目视频 -->
             <div class="container">
-                <a href="https://www.bilibili.com/video/BV13vMczoEGP?spm_id_from=333.788.videopod.sections&vd_source=33c354a919c9ad543057a892d642d8c1
-" target="_blank">
-                    <img src="./files/photo/highlight/Duma.png" style="width: auto; height: 80px;">
+                <a href="https://www.bilibili.com/video/BV13vMczoEGP?spm_id_from=333.788.videopod.sections&vd_source=33c354a919c9ad543057a892d642d8c1" target="_blank">
+                    <img src="./files/photo/highlight/Duma.png" style="width: auto; height: 80px;" alt="Duma Project Video">
                     <div class="video-label">Video</div>
                 </a>
             </div>
-            <div class="container">
-                <img src="./files/photo/DarrenPig_Photo3.jpg" style="width: auto; height: 80px; display: block;">
-            </div>
-
-
-            <!--            <img src="./files/photo/2023-lyzf.jpg" style="width: auto; height: 80px;">-->
-<!--            <img src="./files/photo/CCF_youda.jpg" style="width: auto; height: 80px;">-->
-<!--            <img src="./files/photo/CCF-ctx.jpg" style="width: auto; height: 80px;">-->
-<!--            &lt;!&ndash; <img src="./files/highlight/icpc.jpg" style="width: auto; height: 120px;"> &ndash;&gt;-->
-<!--            <img src="./files/photo/highlight/gdcpc.jpg" style="width: auto; height: 80px;">-->
         </div>
     </div>
-    <div style="height: 120px; overflow: auto; font-size: small;">
+    <!-- 新闻时间线（可滚动） -->
+    <div style="height: 120px; overflow: auto; font-size: var(--font-size-medium);">
         <ul>
             <li>[06/2025] Released a new version of NECLab's embedded BSP framework.</li>
             <li>[05/2025] Won the Best Paper Award at the International Conference on Robotics and Automation!</li>
@@ -346,86 +483,106 @@
             <li>[02/2025] Our research on RTOS optimization for robotics received significant media coverage!</li>
         </ul>
     </div>
-    <div style="margin-top: 5px; font-size: small; margin-bottom: 0px;">⬆ scrollable</div>
+    <!-- 滚动提示 -->
+    <div style="margin-top: 5px; font-size: var(--font-size-small); margin-bottom: 0px;">⬆ scrollable</div>
 
+    <!-- 教育背景与访问经历 -->
     <h2>Education & Visiting</h2>
     <div style="height: 10px"></div>
     <table id="tbPublications" width="100%">
+        <!-- 常州工学院教育背景 -->
         <tbody>
         <tr>
             <td width="320">
                 <div class="logo-container" style="margin-left: 20px">
-                    <img src="files/常州工学院.png" class="theme-logo light-logo" style="height: 60px;">
-                    <img src="files/CIT_Logo.png" class="theme-logo dark-logo" style="height: 60px;">
+                    <!-- 常州工学院Logo（主题切换） -->
+                    <img src="files/常州工学院.png" class="theme-logo light-logo" style="height: 60px;" alt="CIT Logo Light">
+                    <img src="files/CIT_Logo.png" class="theme-logo dark-logo" style="height: 60px;" alt="CIT Logo Dark">
                 </div>
             </td>
-            <td>
-                <p><b>Changzhou Institute of Technology (CIT)</b><br><b style="font-size: 12px;">School of Photoelectric Engineering</b></p>
-                <div style="font-size: 12px">B.Eng. in New Energy Science and Engineering<br>GPA 3.8/4.0<br>Ranked 1st among 900 undergraduates</div>
+            <td style="letter-spacing: 0.5px; line-height: 1.5;">
+                <p><b>Changzhou Institute of Technology (CIT)</b></p>
+                <b style="font-size: var(--font-size-medium);">School of Photoelectric Engineering</b>
+                <div style="font-size: var(--font-size-medium)">B.Eng. in New Energy Science and Engineering<br>GPA 2.9/3.0 Ranked 1st among 900 undergraduates</div>
+               <div style="font-size: var(--font-size-medium)">Sep. 2022 - June. 2026 </div>
             </td>
         </tr>
         </tbody>
-        <!--########################-->
+        
+        <!-- 悉尼大学访问经历 -->
         <tbody>
         <tr>
-            <td width="306">
-                <img src="files/logo-usyd.svg" width="260px" style="box-shadow: 4px 4px 8px #ffffff" class="theme-logo light-logo">
-                <img src="files/logo-usyd-white.svg" width="260px" style="box-shadow: 4px 4px 8px #ffffff" class="theme-logo dark-logo">
+            <td width="320">
+                <div class="logo-container" style="margin-left: 20px">
+                    <!-- 悉尼大学Logo（主题切换） -->
+                    <img src="files/logo-usyd.svg" style="height: 60px;" class="theme-logo light-logo" alt="USYD Logo Light">
+                    <img src="files/logo-usyd-white.svg" style="height: 60px;" class="theme-logo dark-logo" alt="USYD Logo Dark">
+                </div>
             </td>
-            <td>
-                <p><b>The University of Sydney (SYD)</b></p><b style="font-size: 12px;">Faculty of Engineering</b><p>Sydney Manufacturing Hub, SYD </p>
-            <p>Academic Visitor in School of Chemical and Biomolecular Engineering </p>
-            <p>July. 2024 - Nov. 2024 <p>
-        </p>
-        </td>
+            <td style="letter-spacing: 0.5px; line-height: 1.5;">
+                <p><b>The University of Sydney (SYD)</b></p>
+                <b style="font-size: var(--font-size-medium); margin: 1em 0;">Faculty of Engineering</b>
+                <div style="font-size: var(--font-size-medium)">Academic Visitor in School of Chemical and Biomolecular Engineering </div>
+                <div style="font-size: var(--font-size-medium)">July. 2024 - Nov. 2024 </div>
+            </td>
         </tr>
-        <!--########################-->
+        </tbody>
     </table>
 
+    <!-- 研究与工作经历 -->
     <h2>Research & Work Experience</h2>
     <div style="height: 10px"></div>
     <table id="tbPublications" width="100%">
         <tbody>
         <tr>
             <td width="250">
-                <img src="files/NEC_Logo.png" width="200px" style="margin-left: 15px; padding-top: 0px;">
+                <!-- NECLab实验室Logo（主题切换） -->
+                <div class="logo-container" style="margin-left: 15px; padding-top: 0px;">
+                    <img src="files/NEC_Logo_bluck.png" height="100px" class="theme-logo light-logo" alt="NECLab Logo Light">
+                    <img src="files/NEC_Logo-white.png" height="60px" class="theme-logo dark-logo" alt="NECLab Logo Dark">
+                </div>
             </td>
             <td>
-                <p style="font-size: 15px"><b>NECLab, Changzhou Institute of Technology</b></p>
-                <p style="font-size: 12px">Sep. 2023 - Present, Founder & Lead Researcher</p>
-                <p style="font-size: 12px; margin-top: -5px;">Supervised by Prof. Siwen Gu</p>
+                <p style="font-size: var(--font-size-large)"><b>NECLab, Changzhou Institute of Technology</b></p>
+                <p style="font-size: var(--font-size-medium)">Sep. 2023 - Present, Founder & Lead Researcher</p>
+                <p style="font-size: var(--font-size-medium); margin-top: -5px;">Supervised by Prof. Siwen Gu</p>
             </td>
         </tr>
         </tbody>
     </table>
 
+    <!-- 竞赛获奖情况 -->
     <h2>Competition Awards </h2>
+    
+    <!-- ROBOCON机器人竞赛奖项 -->
     <table style="border-spacing:2px">
         <tr></tr>
         <td width="280px">
-            <img src="files/award1.jpg" width="200px" style="box-shadow: 4px 4px 8px #888; margin-left: 32px; margin-top: 0px;">
+            <img src="files/award1.jpg" width="200px" style="box-shadow: 4px 4px 8px #888; margin-left: 32px; margin-top: 0px;" alt="ROBOCON Award Certificate">
         </td>
-        <td style="font-size: 15px;">
+        <td style="font-size: var(--font-size-large);">
             <b>National College Students' Robot Competition ROBOCON</b>
             <p><i style="color: red; display: inline;"><b>National Third Prize</b></i></p>
-            <div style="font-size: 15px">With Team CIT. Supervised by Prof. Siwen Gu.</div>
+            <div style="font-size: var(--font-size-large)">With Team CIT. Supervised by Prof. Siwen Gu.</div>
         </td>
     </table>
 
+    <!-- 职业生涯规划大赛奖项 -->
     <table style="border-spacing:2px">
         <tr></tr>
         <td width="280px">
-            <img src="files/award2.jpg" width="200px" style="box-shadow: 4px 4px 8px #888; margin-left: 32px; margin-top: 0px;">
+            <img src="files/award2.jpg" width="200px" style="box-shadow: 4px 4px 8px #888; margin-left: 32px; margin-top: 0px;" alt="Career Planning Competition Award Certificate">
         </td>
-        <td style="font-size: 15px;">
+        <td style="font-size: var(--font-size-large);">
             <b>National College Students' Career Planning Competition</b>
             <p><i style="color: red; display: inline;"><b>Provincial Silver Medal</b></i></p>
-            <div style="font-size: 15px">Finalist among 700+ participants.</div>
+            <div style="font-size: var(--font-size-large)">Finalist among 700+ participants.</div>
         </td>
     </table>
 
+    <!-- 个人荣誉 -->
     <h2>Honors</h2>
-    <table style="border-spacing:2px; font-size: 15px;">
+    <table style="border-spacing:2px; font-size: var(--font-size-large);">
         <tbody>
         <div style="text-align: center; position: relative; margin-bottom: 40px; margin-top: 20px;">
                 <span style="position: absolute; top: 50%; left: 0; right: 0; transform: translateY(-50%); background-color: rgba(128, 128, 128, 0.3); padding: 0 10px;">
@@ -434,7 +591,8 @@
         <p></p>
         <tr>
             <td width="270px">
-                <img src="files\photo\highlight/2403TLS.png" width="170px" style="box-shadow: 4px 4px 8px #888; margin-left: 50px; margin-top: 0px;">
+                <!-- openEuler大使证书 -->
+                <img src="files\photo\highlight/2403TLS.png" width="170px" style="box-shadow: 4px 4px 8px #888; margin-left: 50px; margin-top: 0px;" alt="openEuler Ambassador Certificate">
             </td>
             <td>
                 <b>openEuler Nanjing Ambassador</b>
@@ -446,87 +604,149 @@
         </tbody>
     </table>
 
+    <!-- 开源项目展示 -->
     <h2>Open-source Projects</h2>
-    <div style="text-align: center;">
-        <a href="https://github.com/Darrenpig">
-            <img height="200" src="https://gitee.com/darrenpig/new_energy_coder_club/raw/master/Image/Logo.png" />
-        </a>
-        <a href="https://github.com/Darrenpig">
-            <img height="200" src="https://gitee.com/darrenpig/new_energy_coder_club/raw/master/Image/NEC_RC%E5%90%88%E7%85%A7.jpg" />
-        </a>
+    
+    <!-- 新能源开发者社区项目 -->
+    <div style="border: 2px solid var(--border-color); padding: 20px; margin: 15px 0; border-radius: 8px;">
+        <h3 style="margin-top: 0; color: var(--link-color);">🚀 New Energy Coder Club</h3>
+        
+        <!-- 项目展示图片 -->
+        <div style="text-align: center; margin: 15px 0;">
+             <a href="https://gitee.com/darrenpig/new_energy_coder_club" target="_blank">
+                 <img height="200" src="files/news10.jpg" style="margin: 0 10px;" alt="New Energy Coder Club Project" />
+             </a>
+         </div>
+        
+        <!-- 项目详细介绍 -->
+        <!-- GitHub风格的项目描述 -->
+        <div style="font-family: var(--font-primary); font-size: var(--font-size-large); line-height: 1.6; color: var(--text-color);">
+            <p style="color: var(--text-color); margin-bottom: 12px;"><strong style="color: var(--text-color);">Project Overview:</strong>"New Energy Coder Club" is an open-source collaboration platform centered on technology sharing and practical growth, focusing on new energy technology, robotics development, and competition projects.</p>
+            
+            <p style="color: var(--text-color); margin-bottom: 8px;"><strong style="color: var(--text-color);">Core Features:</strong></p>
+            <ul style="margin-left: 20px; color: var(--text-color);">
+                <li style="margin-bottom: 8px; color: var(--text-color);">🏆 <strong style="color: var(--accent-color);">Competition Resource Library:</strong>Provides comprehensive preparation resources for National College Student Robot Contest ROBOCON, including FRC blueprints, hardware design templates, and embedded development cases</li>
+                <li style="margin-bottom: 8px; color: var(--text-color);">🤖 <strong style="color: var(--accent-color);">Humanoid Robot Development:</strong>Aims to develop open-source humanoid robots under 10K RMB, covering BSP development, ROS integration, algorithm control, etc.</li>
+                <li style="margin-bottom: 8px; color: var(--text-color);">⚡ <strong style="color: var(--accent-color);">New Energy Technology:</strong>Focuses on IoT and automation control, combining open-source ecosystems like openEuler to explore smart hardware innovation</li>
+                <li style="margin-bottom: 8px; color: var(--text-color);">👥 <strong style="color: var(--accent-color);">Open Source Community:</strong>40+ developers collaborating, providing complete technical closed-loop from theory to implementation</li>
+            </ul>
+            
+            <p style="color: var(--text-color); margin-bottom: 15px;"><strong style="color: var(--text-color);">Tech Stack:</strong><span style="color: var(--secondary-text);">openEuler Embedded, ROS, ESP32, FRC, MayCAD, Embedded BSP Development</span></p>
+            
+            <!-- GitHub风格的项目链接按钮 -->
+            <div style="text-align: center; margin-top: 15px;">
+                <a href="https://gitee.com/darrenpig/new_energy_coder_club" target="_blank" style="display: inline-block; background-color: var(--link-color); color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; margin: 5px; font-weight: 500; transition: all 0.2s ease;">🔗 Visit Repository</a>
+                <a href="https://gitee.com/darrenpig/new_energy_coder_club/issues" target="_blank" style="display: inline-block; background-color: var(--card-bg); color: var(--text-color); border: 1px solid var(--border-color); padding: 10px 20px; border-radius: 6px; text-decoration: none; margin: 5px; font-weight: 500; transition: all 0.2s ease;">💡 Submit Suggestions</a>
+            </div>
+        </div>
     </div>
 
+    <!-- 联系方式 -->
     <h2>Connect with Me</h2>
     <p style="margin-top: -10px;">
-
+        WeChat ID: Pei-pei-Zhu-Pig
     </p>
+    
+    <!-- 联系方式二维码 -->
+    <div style="text-align: center; margin: 15px 0; display: flex; justify-content: center; gap: 20px; align-items: center;">
+        <!-- 飞书二维码 -->
+        <img src="files/FeiShu.png" alt="FeiShu QR Code" style="height: 200px; width: auto;" />
+        <!-- AdventureX二维码 -->
+        <img src="files/AdventureX.jpg" alt="AdventureX QR Code" style="height: 200px; width: auto;" />
+    </div>
 </div>
 
 
-<div style="border: 2px solid var(--border-color); padding: 15px; margin: 10px 0; border-radius: 8px;">
-<h2>Reports</h2>
-<div style="font-size: 15px">
-    [07/2025], <a href="https://mp.weixin.qq.com/s/gUCjDRYt_55663VysYEw8Q" target="_blank">《第二十一届校园读书节获奖名单新鲜出炉！》</a><br>the wechat official account of CIT, over 10,000 views.<br>
-    <div style="height: 4px"></div>
-    [06/2025], <a href="https://mp.weixin.qq.com/s/-lBn2jt8QdHkVogfTi3m2A" target="_blank">《学院印象•光电工程学院 | 加入我们，下一束光由你点亮！》</a><br>the wechat official account of CIT, with over 10,000 visits.<br>
-    <div style="height: 4px"></div>
-    [04/2025], <a href="https://mp.weixin.qq.com/s/wUN05wo-FP1zVrztjwNLSw" target="_blank">《31人获奖！祝贺他们！》</a><br>the wechat official account of Jiangsu Provincial Department of Education.<br>
-    <div style="height: 4px"></div>
-    [04/2025], <a href="https://mp.weixin.qq.com/s/7OLatB4orUE8Mcm6_e3Y1w" target="_blank">《一周要闻 | 常州工学院一周要闻速览（4月7日-4月13日）》</a>
-    <div style="height: 4px"></div>
-    [04/2025], <a href="https://mp.weixin.qq.com/s/YFxmkSbWqgqoIhQIg6OSzg" target="_blank">《活动分享|竞赛经验分享会，助力学生成长》</a><br> the official admissions guide of CIT.<br>
-    <div style="height: 4px"></div>
-    [04/2025], <a href="https://mp.weixin.qq.com/s/RCQtIhWjG45xyiFKs-1NMA" target="_blank">《导学青思下午茶|第四期：光电工程学院“规划起航 职引未来”开展大学生职业生涯规划指导》</a><br> the wechat official account of CIT Undergraduate Admissions, with more than 9,000 visits.<br>
-    <div style="height: 4px"></div>
-    [04/2025], <a href="https://mp.weixin.qq.com/s/Nj-0yqOnxyZFykoRLqNgLw" target="_blank">《光电工程学院举办“导学青思下午茶”进社区活动》</a><br>reported by the official website of CIT.<br>
-    <div style="height: 4px"></div>
-    [02/2025], <a href="https://mp.weixin.qq.com/s?__biz=Mzg4MjUyNjc5Mw==&mid=2247523641&idx=1&sn=3f23a0682d5256ae0ce6df34546d233a&chksm=ceb0ba8c300af5579ec3d1d8fc01fdc98ed438c2fa95f5bccc94b4f1a0a034ed5edb0e276ee8&scene=126&sessionid=1752857324#rd" target="_blank">《【一个萝卜一个坑】常州工学院，临时起意？一拍即合！一声号响，八方来援！》</a><br>the wechat official account of ROBOCON, with more than 1,0000 visits.
+<!-- GitHub风格的Reports部分 -->
+<div style="border-left: 4px solid var(--accent-color); padding: 20px; margin: 20px 0; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+<h2 style="color: var(--text-color); font-family: var(--font-primary); font-weight: 600; margin-bottom: 15px; border-bottom: 2px solid var(--border-color); padding-bottom: 8px;">Media Reports</h2>
+
+<div style="font-family: var(--font-primary); line-height: 1.6; color: var(--text-color);">
+    <!-- 2025年报道 -->
+     <div style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+         <span style="position: absolute; left: 0; color: var(--accent-color); font-weight: 600;">[1]</span>
+         <span style="font-style: italic; color: var(--secondary-text);">CIT Official WeChat</span>. 
+         <a href="https://mp.weixin.qq.com/s/gUCjDRYt_55663VysYEw8Q" target="_blank" style="color: var(--link-color); text-decoration: none; font-weight: 500;">"第二十一届校园读书节获奖名单新鲜出炉！"</a> 
+         <span style="color: var(--secondary-text); font-size: var(--font-size-medium);">(July 2025)</span>. 
+         <span style="color: var(--muted-text); font-size: var(--font-size-small);">Views: 10,000+</span>
+     </div>
+     
+     <div style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+         <span style="position: absolute; left: 0; color: var(--accent-color); font-weight: 600;">[2]</span>
+         <span style="font-style: italic; color: var(--secondary-text);">CIT Official WeChat</span>. 
+         <a href="https://mp.weixin.qq.com/s/-lBn2jt8QdHkVogfTi3m2A" target="_blank" style="color: var(--link-color); text-decoration: none; font-weight: 500;">"学院印象•光电工程学院 | 加入我们，下一束光由你点亮！"</a> 
+         <span style="color: var(--secondary-text); font-size: var(--font-size-medium);">(June 2025)</span>. 
+         <span style="color: var(--muted-text); font-size: var(--font-size-small);">Views: 10,000+</span>
+     </div>
+     
+     <div style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+         <span style="position: absolute; left: 0; color: var(--accent-color); font-weight: 600;">[3]</span>
+         <span style="font-style: italic; color: var(--secondary-text);">Jiangsu Provincial Department of Education</span>. 
+         <a href="https://mp.weixin.qq.com/s/wUN05wo-FP1zVrztjwNLSw" target="_blank" style="color: var(--link-color); text-decoration: none; font-weight: 500;">"31人获奖！祝贺他们！"</a> 
+         <span style="color: var(--secondary-text); font-size: var(--font-size-medium);">(April 2025)</span>
+     </div>
+     
+     <div style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+         <span style="position: absolute; left: 0; color: var(--accent-color); font-weight: 600;">[4]</span>
+         <span style="font-style: italic; color: var(--secondary-text);">CIT Weekly News</span>. 
+         <a href="https://mp.weixin.qq.com/s/7OLatB4orUE8Mcm6_e3Y1w" target="_blank" style="color: var(--link-color); text-decoration: none; font-weight: 500;">"一周要闻 | 常州工学院一周要闻速览（4月7日-4月13日）"</a> 
+         <span style="color: var(--secondary-text); font-size: var(--font-size-medium);">(April 2025)</span>
+     </div>
+    
+    <div style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+         <span style="position: absolute; left: 0; color: var(--accent-color); font-weight: 600;">[5]</span>
+         <span style="font-style: italic; color: var(--secondary-text);">CIT Admissions Guide</span>. 
+         <a href="https://mp.weixin.qq.com/s/YFxmkSbWqgqoIhQIg6OSzg" target="_blank" style="color: var(--link-color); text-decoration: none; font-weight: 500;">"活动分享|竞赛经验分享会，助力学生成长"</a> 
+         <span style="color: var(--secondary-text); font-size: var(--font-size-medium);">(April 2025)</span>
+     </div>
+     
+     <div style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+         <span style="position: absolute; left: 0; color: var(--accent-color); font-weight: 600;">[6]</span>
+         <span style="font-style: italic; color: var(--secondary-text);">CIT Undergraduate Admissions</span>. 
+         <a href="https://mp.weixin.qq.com/s/RCQtIhWjG45xyiFKs-1NMA" target="_blank" style="color: var(--link-color); text-decoration: none; font-weight: 500;">"导学青思下午茶|第四期：光电工程学院'规划起航 职引未来'开展大学生职业生涯规划指导"</a> 
+         <span style="color: var(--secondary-text); font-size: var(--font-size-medium);">(April 2025)</span>. 
+         <span style="color: var(--muted-text); font-size: var(--font-size-small);">Views: 9,000+</span>
+     </div>
+     
+     <div style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+         <span style="position: absolute; left: 0; color: var(--accent-color); font-weight: 600;">[7]</span>
+         <span style="font-style: italic; color: var(--secondary-text);">CIT Official Website</span>. 
+         <a href="https://mp.weixin.qq.com/s/Nj-0yqOnxyZFykoRLqNgLw" target="_blank" style="color: var(--link-color); text-decoration: none; font-weight: 500;">"光电工程学院举办'导学青思下午茶'进社区活动"</a> 
+         <span style="color: var(--secondary-text); font-size: var(--font-size-medium);">(April 2025)</span>
+     </div>
+     
+     <div style="margin-bottom: 12px; padding-left: 20px; position: relative;">
+         <span style="position: absolute; left: 0; color: var(--accent-color); font-weight: 600;">[8]</span>
+         <span style="font-style: italic; color: var(--secondary-text);">ROBOCON Official WeChat</span>. 
+         <a href="https://mp.weixin.qq.com/s?__biz=Mzg4MjUyNjc5Mw==&mid=2247523641&idx=1&sn=3f23a0682d5256ae0ce6df34546d233a&chksm=ceb0ba8c300af5579ec3d1d8fc01fdc98ed438c2fa95f5bccc94b4f1a0a034ed5edb0e276ee8&scene=126&sessionid=1752857324#rd" target="_blank" style="color: var(--link-color); text-decoration: none; font-weight: 500;">"【一个萝卜一个坑】常州工学院，临时起意？一拍即合！一声号响，八方来援！"</a> 
+         <span style="color: var(--secondary-text); font-size: var(--font-size-medium);">(February 2025)</span>. 
+         <span style="color: var(--muted-text); font-size: var(--font-size-small);">Views: 10,000+</span>
+     </div>
 
 
 </div>
 </div>
 <p></p>
 
-
+<!-- ========== 页脚部分 ========== -->
 <div style="margin: -20pt;"></div>
 <div id="footer">
     <div id="footer-text"></div>
 </div>
+
+<!-- 页脚统计和版权信息 -->
 <p><center><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <!-- <span id="busuanzi_container_site_pv"><span id="busuanzi_value_site_pv" style="color: red;"></span> Total Pageviews, since Apr.2024</center></p> -->
-    <a style="color: black; font-size: small;"><i>Latest updated in July. 2025</i></a>
-    <p></p><div style="border: 2px solid var(--border-color); padding: 10px; margin: 10px 0; border-radius: 8px; text-align: center;"> © DarrenPig</div><p></p>
+    
+    <!-- 最后更新时间 -->
+    <a style="color: black; font-size: var(--font-size-small);"><i>Latest updated in July. 2025</i></a>
+    
+    <!-- 版权信息与备案 -->
+    <p></p><div style="border: 2px solid var(--border-color); padding: 10px; margin: 10px 0; border-radius: 8px; text-align: center;">苏ICP备2025187096号-1X © 2025 DarrenPig All Right Reserved.
+</div><p></p>
     </div>
 
-
     <p></p>
-<div class="jvectormap-tip"></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
-    div.grammarly-desktop-integration {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select:none;
-        user-select:none;
-    }
+<div class="jvectormap-tip"></div>
 
-    div.grammarly-desktop-integration:before {
-        content: attr(data-content);
-    }
-    <p></p>
-</style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>        <a href="mailto:22230635@czu.cn" target="_blank"><img src="./files/icon/email.png" height="30px" style="margin-bottom:-3px"></a>&nbsp;
-        <a href="https://scholar.google.com/citations?user=nL93WMEAAAAJ&hl=en" target="_blank"><img src="./files/icon/google_scholar.png" height="30px" style="margin-bottom:-3px"></a>&nbsp;
-        <a href="https://github.com/Darrenpig" target="_blank">
-            <img src="./files/icon/github-mark.png" alt="GitHub" height="30px" style="margin-bottom:-3px">
-        </a>&nbsp;
-        <a href="./files/my_wechat.jpg" target="_blank"><img src="./files/icon/wechat.png" height="30px" style="margin-bottom:-3px"></a>&nbsp;
-        <a href="https://space.bilibili.com/438904165?spm_id_from=333.337.0.0" target="_blank"><img src="./files/icon/bilibili.png" height="30px" style="margin-bottom:-3px"></a>&nbsp;
-        <a href="https://www.zhihu.com/people/zhu-pei-wei-93" target="_blank"><img src="./files/icon/zhihu.png" height="30px" style="margin-bottom:-3px"></a>&nbsp;
-        <a href="https://www.xiaohongshu.com/user/profile/62f2899b000000001f0074f1" target="_blank"><img src="./files/icon/xiaohongshu.png" height="30px" style="margin-bottom:-3px"></a>
+</body>
+</html>
