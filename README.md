@@ -28,9 +28,6 @@
   <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fdarrenpig.github.io%2F"><img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fdarrenpig.github.io%2F&label=Wacher%20Today&countColor=%23f47373" /></a>
 </p>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awards and Honors</title>
     <style>
         body {
@@ -70,7 +67,7 @@
 <body>
     <h2>Awards and Honors</h2>
     <div class="award">
-        <div class="award-title">【教育部】2024 全国大学生机器人大赛ROBOCON赛项 国家级 三等奖</div>
+        <div class="award-title">【教育部机械司&计算机司】2024 & 2025 全国大学生机器人大赛ROBOCON赛项 国家级 三等奖</div>
         <div class="award-description">- 担任领队、项管，负责机器人上位机 BSP 到 ROS、下位机电驱、算法、气动SMC控制等，带队7天7夜，90+国内高校中预算最低的条件下，首次完赛</div>
     </div>
     <div class="award">
