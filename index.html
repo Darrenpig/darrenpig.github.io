@@ -170,7 +170,7 @@
             position: absolute;
             top: 5px;
             left: 5px;
-            background-color: #ea3323;
+            background-color: #DC143C;
             color: white;
             padding: 0px 10px;
             border-radius: 3px;
@@ -182,6 +182,37 @@
             justify-content: center;
             align-items: center;
             font-size: var(--font-size-small);
+        }
+        
+        /* 自定义滚动条样式 */
+        div[style*="overflow-x: scroll"], div[style*="overflow: auto"] {
+            scrollbar-width: thin;
+            scrollbar-color: #DC143C #f1f1f1;
+        }
+
+        div[style*="overflow-x: scroll"]::-webkit-scrollbar, div[style*="overflow: auto"]::-webkit-scrollbar {
+            height: 8px;
+            width: 8px;
+        }
+
+        div[style*="overflow-x: scroll"]::-webkit-scrollbar-track, div[style*="overflow: auto"]::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 20px;
+        }
+
+        div[style*="overflow-x: scroll"]::-webkit-scrollbar-thumb, div[style*="overflow: auto"]::-webkit-scrollbar-thumb {
+            background: linear-gradient(45deg, #DC143C, #ff6b6b);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        div[style*="overflow-x: scroll"]::-webkit-scrollbar-thumb:hover, div[style*="overflow: auto"]::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(45deg, #b91c3c, #DC143C);
+            transform: scale(1.1);
+        }
+
+        div[style*="overflow-x: scroll"]::-webkit-scrollbar-corner, div[style*="overflow: auto"]::-webkit-scrollbar-corner {
+            background: #f1f1f1;
         }
         /* 研究亮点网格布局 */
         .research-hightlight {
@@ -382,10 +413,10 @@
     <h2 style="margin-top: -10px;">Biography</h2>
     <div style="font-size: var(--font-size-large)">
         <!-- 基本信息介绍 -->
-        Hi! I am <strong>Darren Pig (Chinese name：朱佩韦)</strong>, currently a <u>a Final year undergraduate student</u> majoring in New Energy Science and Engineering at Changzhou Institute of Technology and leading research at <a href="https://gitee.com/darrenpig/new_energy_coder_club" target="_blank">NECLab@CIT</a>, supervised by <a href="https://gdxy.czu.cn/2025/0317/c9891a156178/page.htm" target="_blank">Prof. Siwen Gu</a>. I once working with <a href="https://gitee.com/pai_666">Puai</a>.<br><br>
+        Hi! I am <strong>Darren Pig (Chinese name：朱佩韦)</strong>, currently a <u>a Final year undergraduate student</u> majoring in New Energy Science and Engineering at Changzhou Institute of Technology and leading research at <a href="https://gitee.com/darrenpig/new_energy_coder_club" target="_blank" style="font-weight: bold;">NECLab@CIT</a>, supervised by <a href="https://gdxy.czu.cn/2025/0317/c9891a156178/page.htm" target="_blank" style="font-weight: bold;">Prof. Siwen Gu</a>. I once working with <a href="https://gitee.com/pai_666" style="font-weight: bold;">Puai</a>.<br><br>
 
         <!-- 获奖经历 -->
-        I have won a silver medal in the <strong>National College Students' Career Planning Competition</strong> Jiangsu Regional Finals and three national Third Prize in the National College Students' Robot Competition <strong>ROBOCON</strong>robotics competition. I also being the youngest to hold the position <strong>(The domestic market share of server operating systems exceeds over 50% in China)<a href="https://www.openeuler.org/zh/community/user-group/detail/?name=南京">openEuler Nanjing ambassador</a></strong> and <strong>"Excellent Reading Star of CIT(读者之星)"</strong> which was the recipient of the highest honor in reading for undergraduate students at CIT (rk 1/900).<br><br>
+        I have won a silver medal in the <strong>National College Students' Career Planning Competition</strong> Jiangsu Regional Finals and three national Third Prize in the National College Students' Robot Competition <strong>ROBOCON</strong>robotics competition. I also being the youngest to hold the position <strong>(The domestic market share of server operating systems exceeds over 50% in China)<a href="https://www.openeuler.org/zh/community/user-group/detail/?name=南京" style="font-weight: bold;">openEuler Nanjing ambassador</a></strong> and <strong>"Excellent Reading Star of CIT(读者之星)"</strong> which was the recipient of the highest honor in reading for undergraduate students at CIT (rk 1/900).<br><br>
 
         <!-- 研究兴趣 -->
         My research interests mainly focus on <b>Embedded BSP (嵌入式板载操作系统) | Robotic (机器人学) | Embodied AI (具身智能)</b>, especially on Robotic RTOS control (机器人运行时控制), Yocto customized operating system (操作系统移植) and Humanoid Robot Embedded Develop (人形机器人嵌入式开发).<br><br>
@@ -427,7 +458,7 @@
             <!-- BB8机器人视频 -->
             <div class="container">
                 <a href="https://www.bilibili.com/video/BV1PV4y197Zo/" target="_blank">
-                    <img src="./files/photo/highlight/BB8.jpg" style="width: auto; height: 80px;" alt="BB8 Robot Video">
+                    <img src="./files/photo/highlight/BB8.jpg" style="width: auto; height: 120px;" alt="BB8 Robot Video">
                     <div class="video-label">Video</div>
                 </a>
             </div>
@@ -435,7 +466,7 @@
             <!-- RC机器人竞赛视频 -->
             <div class="container">
                 <a href="https://findermp.video.qq.com/251/20304/stodownload?encfilekey=rjD5jyTuFrIpZ2ibE8T7Ym3K77SEULgkiat3XCKUy0vm2UqEic36hKTZ0Xr7c4cKNsEQPicRPkHLcf6PXer86B0STrTGYwiaPEib6XHoibv8FVicBDt6Lic7PYkBXag" target="_blank">
-                    <img src="./files/photo/highlight/RC.jfif" style="width: auto; height: 80px;" alt="RC Robot Competition Video">
+                    <img src="./files/photo/highlight/RC.jfif" style="width: auto; height: 120px;" alt="RC Robot Competition Video">
                     <div class="video-label">Video</div>
                 </a>
             </div>
@@ -443,7 +474,7 @@
             <!-- 2024年RC竞赛视频 -->
             <div class="container">
                 <a href="https://www.bilibili.com/video/BV19KHQejEms/" target="_blank">
-                    <img src="./files/photo/highlight/2024RC3.png" style="width: auto; height: 80px;" alt="2024 RC Competition Video">
+                    <img src="./files/photo/highlight/2024RC3.png" style="width: auto; height: 120px;" alt="2024 RC Competition Video">
                     <div class="video-label">Video</div>
                 </a>
             </div>
@@ -451,7 +482,7 @@
             <!-- 会议视频 -->
             <div class="container">
                 <a href="https://findermp.video.qq.com/251/20304/stodownload?encfilekey=rjD5jyTuFrIpZ2ibE8T7Ym3K77SEULgkiadRbXkgvvXClL0WCW2lJB2Nmt0MtrOhcgsVpgC7xKYDjUfGaBJ1ZBsx8kdicBzy6ichnYBcfzQ4Gda4Pe3T5Kc94Q&amp;token=2lt8WBSnjTlCHacIkDPXCO6WsXSKPGW00QKrHzOJubY5zHcWYeMbLOmcYwRGHDjicCD9qr25En4lkLC51WVPQfSLTb6cSlxbbYOXEMm8Ix3icM6yIb9daD4mUM7IykicbAK4cUuYwIUuAiaUHL2iaXfWGhnc1iaXSoI6xoBdRibpK0MmZg&amp;idx=1&amp;dotrans=0&amp;hy=SZ&amp;m=&amp;scene=2&amp;uzid=2" target="_blank">
-                    <img src="./files/photo/highlight/meet.png" style="width: auto; height: 80px;" alt="Meeting Video">
+                    <img src="./files/photo/highlight/meet.png" style="width: auto; height: 120px;" alt="Meeting Video">
                     <div class="video-label">Video</div>
                 </a>
             </div>
@@ -459,7 +490,7 @@
             <!-- SYD项目视频 -->
             <div class="container">
                 <a href="https://www.bilibili.com/video/BV1hgHQeCEQu/" target="_blank">
-                    <img src="./files/photo/highlight/SYD-DSC00103.png" style="width: auto; height: 80px;" alt="SYD Project Video">
+                    <img src="./files/photo/highlight/SYD-DSC00103.png" style="width: auto; height: 120px;" alt="SYD Project Video">
                     <div class="video-label">Video</div>
                 </a>
             </div>
@@ -467,7 +498,7 @@
             <!-- Duma项目视频 -->
             <div class="container">
                 <a href="https://www.bilibili.com/video/BV13vMczoEGP?spm_id_from=333.788.videopod.sections&vd_source=33c354a919c9ad543057a892d642d8c1" target="_blank">
-                    <img src="./files/photo/highlight/Duma.png" style="width: auto; height: 80px;" alt="Duma Project Video">
+                    <img src="./files/photo/highlight/Duma.png" style="width: auto; height: 120px;" alt="Duma Project Video">
                     <div class="video-label">Video</div>
                 </a>
             </div>
@@ -562,7 +593,7 @@
         </td>
         <td style="font-size: var(--font-size-large);">
             <b>National College Students' Robot Competition ROBOCON</b>
-            <p><i style="color: red; display: inline;"><b>National Third Prize</b></i></p>
+            <p><i style="color: #DC143C; display: inline;"><b>National Third Prize</b></i></p>
             <div style="font-size: var(--font-size-large)">With Team CIT. Supervised by Prof. Siwen Gu.</div>
         </td>
     </table>
@@ -575,7 +606,7 @@
         </td>
         <td style="font-size: var(--font-size-large);">
             <b>National College Students' Career Planning Competition</b>
-            <p><i style="color: red; display: inline;"><b>Provincial Silver Medal</b></i></p>
+            <p><i style="color: #DC143C; display: inline;"><b>Provincial Silver Medal</b></i></p>
             <div style="font-size: var(--font-size-large)">Finalist among 700+ participants.</div>
         </td>
     </table>
@@ -621,7 +652,7 @@
         <!-- 项目详细介绍 -->
         <!-- GitHub风格的项目描述 -->
         <div style="font-family: var(--font-primary); font-size: var(--font-size-large); line-height: 1.6; color: var(--text-color);">
-            <p style="color: var(--text-color); margin-bottom: 12px;"><strong style="color: var(--text-color);">Project Overview:</strong>"New Energy Coder Club" is an open-source collaboration platform centered on technology sharing and practical growth, focusing on new energy technology, robotics development, and competition projects.</p>
+            <p style="color: var(--text-color); margin-bottom: 12px;"><strong style="color: var(--text-color);">Project Overview:</strong> New Energy Coder Club is an open-source collaboration platform centered on technology sharing and practical growth, focusing on new energy technology, robotics development, and competition projects.</p>
             
             <p style="color: var(--text-color); margin-bottom: 8px;"><strong style="color: var(--text-color);">Core Features:</strong></p>
             <ul style="margin-left: 20px; color: var(--text-color);">
@@ -631,11 +662,11 @@
                 <li style="margin-bottom: 8px; color: var(--text-color);">👥 <strong style="color: var(--accent-color);">Open Source Community:</strong>40+ developers collaborating, providing complete technical closed-loop from theory to implementation</li>
             </ul>
             
-            <p style="color: var(--text-color); margin-bottom: 15px;"><strong style="color: var(--text-color);">Tech Stack:</strong><span style="color: var(--secondary-text);">openEuler Embedded, ROS, ESP32, FRC, MayCAD, Embedded BSP Development</span></p>
+            <p style="color: var(--text-color); margin-bottom: 15px;"><strong style="color: var(--text-color);">Tech Stack: </strong><span style="color: var(--secondary-text);"> openEuler Embedded, ROS, ESP32, FRC, MayCAD, Embedded BSP Development</span></p>
             
             <!-- GitHub风格的项目链接按钮 -->
             <div style="text-align: center; margin-top: 15px;">
-                <a href="https://gitee.com/darrenpig/new_energy_coder_club" target="_blank" style="display: inline-block; background-color: var(--link-color); color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; margin: 5px; font-weight: 500; transition: all 0.2s ease;">🔗 Visit Repository</a>
+                <a href="https://gitee.com/darrenpig/new_energy_coder_club" target="_blank" style="display: inline-block; background-color: #DC143C; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; margin: 5px; font-weight: 500; transition: all 0.2s ease;">🔗 Visit Repository</a>
                 <a href="https://gitee.com/darrenpig/new_energy_coder_club/issues" target="_blank" style="display: inline-block; background-color: var(--card-bg); color: var(--text-color); border: 1px solid var(--border-color); padding: 10px 20px; border-radius: 6px; text-decoration: none; margin: 5px; font-weight: 500; transition: all 0.2s ease;">💡 Submit Suggestions</a>
             </div>
         </div>
@@ -643,7 +674,7 @@
 
     <!-- 联系方式 -->
     <h2>Connect with Me</h2>
-    <p style="margin-top: -10px;">
+    <p style="margin-top: -10px; font-size: var(--font-size-medium);">
         WeChat ID: Pei-pei-Zhu-Pig
     </p>
     
@@ -668,7 +699,6 @@
          <span style="font-style: italic; color: var(--secondary-text);">CIT Official WeChat</span>. 
          <a href="https://mp.weixin.qq.com/s/gUCjDRYt_55663VysYEw8Q" target="_blank" style="color: var(--link-color); text-decoration: none; font-weight: 500;">"第二十一届校园读书节获奖名单新鲜出炉！"</a> 
          <span style="color: var(--secondary-text); font-size: var(--font-size-medium);">(July 2025)</span>. 
-         <span style="color: var(--muted-text); font-size: var(--font-size-small);">Views: 10,000+</span>
      </div>
      
      <div style="margin-bottom: 12px; padding-left: 20px; position: relative;">
@@ -676,7 +706,6 @@
          <span style="font-style: italic; color: var(--secondary-text);">CIT Official WeChat</span>. 
          <a href="https://mp.weixin.qq.com/s/-lBn2jt8QdHkVogfTi3m2A" target="_blank" style="color: var(--link-color); text-decoration: none; font-weight: 500;">"学院印象•光电工程学院 | 加入我们，下一束光由你点亮！"</a> 
          <span style="color: var(--secondary-text); font-size: var(--font-size-medium);">(June 2025)</span>. 
-         <span style="color: var(--muted-text); font-size: var(--font-size-small);">Views: 10,000+</span>
      </div>
      
      <div style="margin-bottom: 12px; padding-left: 20px; position: relative;">
@@ -705,7 +734,6 @@
          <span style="font-style: italic; color: var(--secondary-text);">CIT Undergraduate Admissions</span>. 
          <a href="https://mp.weixin.qq.com/s/RCQtIhWjG45xyiFKs-1NMA" target="_blank" style="color: var(--link-color); text-decoration: none; font-weight: 500;">"导学青思下午茶|第四期：光电工程学院'规划起航 职引未来'开展大学生职业生涯规划指导"</a> 
          <span style="color: var(--secondary-text); font-size: var(--font-size-medium);">(April 2025)</span>. 
-         <span style="color: var(--muted-text); font-size: var(--font-size-small);">Views: 9,000+</span>
      </div>
      
      <div style="margin-bottom: 12px; padding-left: 20px; position: relative;">
@@ -720,7 +748,6 @@
          <span style="font-style: italic; color: var(--secondary-text);">ROBOCON Official WeChat</span>. 
          <a href="https://mp.weixin.qq.com/s?__biz=Mzg4MjUyNjc5Mw==&mid=2247523641&idx=1&sn=3f23a0682d5256ae0ce6df34546d233a&chksm=ceb0ba8c300af5579ec3d1d8fc01fdc98ed438c2fa95f5bccc94b4f1a0a034ed5edb0e276ee8&scene=126&sessionid=1752857324#rd" target="_blank" style="color: var(--link-color); text-decoration: none; font-weight: 500;">"【一个萝卜一个坑】常州工学院，临时起意？一拍即合！一声号响，八方来援！"</a> 
          <span style="color: var(--secondary-text); font-size: var(--font-size-medium);">(February 2025)</span>. 
-         <span style="color: var(--muted-text); font-size: var(--font-size-small);">Views: 10,000+</span>
      </div>
 
 
