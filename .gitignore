@@ -1,0 +1,32 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE / Editor configurations
+.idea/
+.vscode/
+.trae/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary / Backup files
+*.bak
+*.swp
+*.tmp
+*~
+backup/
+
+# Node / Build tools (if added in the future)
+node_modules/
+dist/
+build/
+
+# Logs
+*.log
