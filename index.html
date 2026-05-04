@@ -523,38 +523,34 @@
     <!-- 滚动提示 -->
     <div style="margin-top: 5px; font-size: var(--font-size-small); margin-bottom: 0px;">⬆ scrollable</div>
 
-    <!-- 视觉作品集 -->
-    <h2>Visual Portfolio</h2>
-    <div style="margin-bottom: 15px; font-size: var(--font-size-medium); color: var(--text-color);">
-        A curated gallery of robotics projects, competitions, and academic highlights.
-        <a href="https://bonjour.bio/darrenpig" target="_blank" style="color: var(--link-color); font-weight: 500;">View full portfolio on Bonjour.bio →</a>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-bottom: 10px;">
-        <div style="position: relative; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow);">
-            <img src="./files/photo/highlight/DarrenPig1M.png" style="width: 100%; height: 150px; object-fit: cover; display: block;" alt="Personal Brand">
-            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.55); color: #fff; padding: 6px 10px; font-size: var(--font-size-small);">Personal Brand</div>
-        </div>
-        <div style="position: relative; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow);">
-            <img src="./files/photo/highlight/RMer.jpg" style="width: 100%; height: 150px; object-fit: cover; display: block;" alt="Robotics Team">
-            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.55); color: #fff; padding: 6px 10px; font-size: var(--font-size-small);">Robotics Team</div>
-        </div>
-        <div style="position: relative; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow);">
-            <img src="./files/photo/highlight/RTTer.jpg" style="width: 100%; height: 150px; object-fit: cover; display: block;" alt="RT-Thread Community">
-            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.55); color: #fff; padding: 6px 10px; font-size: var(--font-size-small);">RT-Thread Community</div>
-        </div>
-        <div style="position: relative; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow);">
-            <img src="./files/photo/highlight/SYDer.jpg" style="width: 100%; height: 150px; object-fit: cover; display: block;" alt="Sydney Exchange">
-            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.55); color: #fff; padding: 6px 10px; font-size: var(--font-size-small);">Sydney Exchange</div>
-        </div>
-        <div style="position: relative; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow);">
-            <img src="./files/photo/highlight/PreFirst.jpg" style="width: 100%; height: 150px; object-fit: cover; display: block;" alt="Competition Debut">
-            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.55); color: #fff; padding: 6px 10px; font-size: var(--font-size-small);">Competition Debut</div>
-        </div>
-        <div style="position: relative; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow);">
-            <img src="./files/photo/highlight/2403TLS.png" style="width: 100%; height: 150px; object-fit: cover; display: block;" alt="openEuler Ambassador">
-            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.55); color: #fff; padding: 6px 10px; font-size: var(--font-size-small);">openEuler Ambassador</div>
-        </div>
-    </div>
+    <!-- 项目作品集（标准学术CV风格） -->
+    <h2>Portfolio</h2>
+    <div style="height: 10px"></div>
+    <table id="tbPortfolio" width="100%">
+        <tbody>
+        <tr>
+            <td width="250">
+                <div style="margin-left: 15px; text-align: center;">
+                    <img src="./files/logo.ThinaPower.png" style="height: 80px;" alt="SolarGlyph Logo">
+                </div>
+            </td>
+            <td style="letter-spacing: 0.5px; line-height: 1.5;">
+                <p style="font-size: var(--font-size-large)"><b><a href="https://solarglyph.newenergycoder.club/" target="_blank" style="color: var(--link-color); text-decoration: none;">SolarGlyph</a></b></p>
+                <p style="font-size: var(--font-size-large); color: var(--link-color); font-weight: bold;">2024 – Present, Full-stack Developer & Project Lead</p>
+                <p style="font-size: var(--font-size-large); margin-top: -5px;">An integrated design, simulation, and investment analysis platform for photovoltaic projects, covering site selection, 8760-hour time-series simulation, and PV-storage-charging ROI modeling.</p>
+                <ul style="font-size: var(--font-size-large); margin-top: 5px;">
+                    <li>Map-based site selection and component layout with KML/KMZ/SHP import support</li>
+                    <li>8760-hour time-series simulation and loss analysis for solar generation forecasting</li>
+                    <li>Investment evaluation suite (NPV, IRR, LCOE, payback period) with report export</li>
+                    <li>Tech stack: React 18 + TypeScript + Vite, Three.js + React Three Fiber, AMap JSAPI, Ant Design</li>
+                </ul>
+                <p style="font-size: var(--font-size-medium); margin-top: 5px;">
+                    <a href="https://solarglyph.newenergycoder.club/" target="_blank" style="color: var(--link-color);">🔗 Live Demo</a>
+                </p>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 
     <!-- 教育背景与访问经历 -->
     <h2>Education & Visiting</h2>
