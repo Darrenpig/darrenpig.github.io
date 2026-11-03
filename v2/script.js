@@ -1,3 +1,5 @@
+window.__darrenV2Boot = true;
+
 (() => {
   'use strict';
 
@@ -142,7 +144,7 @@
     sections.forEach((section) => sectionObserver.observe(section));
   }
 
-  if (finePointer.matches) {
+  if (finePointer.matches && !root.classList.contains('embedded')) {
     let pointerQueued = false;
     let pointerX = 0;
     let pointerY = 0;

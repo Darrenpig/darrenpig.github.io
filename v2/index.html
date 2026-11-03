@@ -19,12 +19,20 @@
   <title>Peiwei Zhu — Embedded Systems & Robotics</title>
   <script>
     document.documentElement.classList.add('js');
+    if (window.self !== window.top) document.documentElement.classList.add('embedded');
+    window.__darrenV2Boot = false;
+    window.setTimeout(function () {
+      if (!window.__darrenV2Boot) document.documentElement.classList.remove('js');
+    }, 3000);
     try {
       const saved = localStorage.getItem('darren-theme');
       if (saved) document.documentElement.dataset.theme = saved;
     } catch (_) {}
   </script>
+  <script defer src="assets/vendor/gsap.min.js"></script>
+  <script defer src="assets/vendor/ScrollTrigger.min.js"></script>
   <script defer src="script.js" onerror="document.documentElement.classList.remove('js')"></script>
+  <script defer src="gsap-animations.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -80,7 +88,7 @@
           <div class="portrait-orbit orbit-two" aria-hidden="true"></div>
           <div class="portrait-cross cross-one" aria-hidden="true">+</div>
           <div class="portrait-cross cross-two" aria-hidden="true">+</div>
-          <img class="portrait" src="assets/portrait.jpg" width="500" height="500" alt="Portrait of Peiwei Zhu">
+          <img class="portrait" src="assets/portrait.jpg" width="500" height="500" alt="Portrait of Peiwei Zhu" decoding="async" fetchpriority="high">
           <div class="floating-tag tag-bsp">BSP / RTOS</div>
           <div class="floating-tag tag-robotics">ROBOTICS</div>
           <div class="portrait-caption"><strong>CODE. CIRCUITS. CONTROL.</strong><span>Building across the stack.</span></div>
@@ -114,7 +122,7 @@
       <div class="project-grid">
         <article class="project-card project-featured reveal" data-spotlight>
           <a class="project-media" href="https://solarglyph.newenergycoder.club/" target="_blank" rel="noopener" aria-label="Open SolarGlyph live demo">
-            <img src="assets/solarglyph.webp" width="1600" height="858" alt="SolarGlyph photovoltaic design and simulation dashboard" loading="lazy">
+            <picture><source srcset="assets/solarglyph.webp" type="image/webp"><img src="assets/solarglyph.jpg" width="1600" height="858" alt="SolarGlyph photovoltaic design and simulation dashboard" loading="lazy" decoding="async"></picture>
             <span class="project-number">01</span><span class="media-arrow" aria-hidden="true">↗</span>
           </a>
           <div class="project-body">
@@ -133,7 +141,7 @@
 
         <article class="project-card reveal" data-spotlight>
           <a class="project-media" href="https://www.newenergycoder.club/" target="_blank" rel="noopener" aria-label="Open New Energy Coder Club website">
-            <img src="assets/nec.webp" width="1600" height="857" alt="New Energy Coder Club open-source community website" loading="lazy">
+            <picture><source srcset="assets/nec.webp" type="image/webp"><img src="assets/nec.jpg" width="1600" height="857" alt="New Energy Coder Club open-source community website" loading="lazy" decoding="async"></picture>
             <span class="project-number">02</span><span class="media-arrow" aria-hidden="true">↗</span>
           </a>
           <div class="project-body">
@@ -150,7 +158,7 @@
 
         <article class="project-card reveal" data-delay="100" data-spotlight>
           <a class="project-media" href="https://github.com/Darrenpig/BB8-Remake" target="_blank" rel="noopener" aria-label="Open BB8 Remake repository">
-            <img src="assets/bb8.webp" width="1600" height="1200" alt="BB-8 spherical robot hardware prototype" loading="lazy">
+            <picture><source srcset="assets/bb8.webp" type="image/webp"><img src="assets/bb8.jpg" width="1600" height="1200" alt="BB-8 spherical robot hardware prototype" loading="lazy" decoding="async"></picture>
             <span class="project-number">03</span><span class="media-arrow" aria-hidden="true">↗</span>
           </a>
           <div class="project-body">
@@ -243,7 +251,7 @@
           <img src="assets/robocon.png" width="500" height="333" alt="CIT team at the 2024 ROBOCON competition" loading="lazy"><span class="media-overlay"><small>COMPETITION · 2024</small><strong>ROBOCON with Team CIT</strong></span><span class="play-button" aria-hidden="true">▶</span>
         </a>
         <a class="media-card reveal" href="https://www.bilibili.com/video/BV1PV4y197Zo/" target="_blank" rel="noopener">
-          <img src="assets/bb8.webp" width="1600" height="1200" alt="BB-8 robot motion-control demonstration" loading="lazy"><span class="media-overlay"><small>ROBOT DEMO</small><strong>BB8 in motion</strong></span><span class="play-button" aria-hidden="true">▶</span>
+          <picture><source srcset="assets/bb8.webp" type="image/webp"><img src="assets/bb8.jpg" width="1600" height="1200" alt="BB-8 robot motion-control demonstration" loading="lazy" decoding="async"></picture><span class="media-overlay"><small>ROBOT DEMO</small><strong>BB8 in motion</strong></span><span class="play-button" aria-hidden="true">▶</span>
         </a>
         <a class="media-card media-wide reveal" data-delay="80" href="https://www.bilibili.com/video/BV1hgHQeCEQu/" target="_blank" rel="noopener">
           <img src="assets/sydney.png" width="500" height="334" alt="International exchange program at the University of Sydney" loading="lazy"><span class="media-overlay"><small>INTERNATIONAL EXCHANGE · 2024</small><strong>Sydney field notes</strong></span><span class="play-button" aria-hidden="true">▶</span>
@@ -268,7 +276,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="shell"><p>© <span id="year">2026</span> PEIWEI ZHU <span>·</span> V2.0</p><p>DESIGNED WITH INTENT. BUILT WITH CURIOSITY.</p><a href="../">CLASSIC VERSION ↗</a><a href="#top">BACK TO TOP ↑</a></div>
+    <div class="shell"><p>© <span id="year">2026</span> PEIWEI ZHU <span>·</span> V2.1</p><p>DESIGNED WITH INTENT. BUILT WITH CURIOSITY.</p><a href="../">CLASSIC VERSION ↗</a><a href="#top">BACK TO TOP ↑</a></div>
   </footer>
 </body>
 </html>
