@@ -112,6 +112,32 @@
         .theme-toggle:hover {
             background-color: var(--border-color);
         }
+
+        /* V2.0 独立版本入口 */
+        .v2-launch {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0 0 18px 0;
+            padding: 9px 14px;
+            background: #c6ff4a;
+            color: #101507 !important;
+            border: 1px solid #a6dd33;
+            border-radius: 4px;
+            box-shadow: 5px 5px 0 rgba(16, 21, 7, 0.16);
+            font-family: var(--font-monospace);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            text-decoration: none !important;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .v2-launch span { font-size: 10px; opacity: 0.72; }
+        .v2-launch:hover { transform: translate(-1px, -1px); box-shadow: 7px 7px 0 rgba(16, 21, 7, 0.2); }
+        @media (max-width: 500px) {
+            .v2-launch { padding: 8px 11px; font-size: 11px; }
+            .v2-launch span { font-size: 9px; }
+        }
         
         /* ========== Logo和图片样式 ========== */
         /* Logo容器布局 */
@@ -306,6 +332,7 @@
                     
                     <!-- 页面标题和Logo -->
                     <div id="toptitle">
+                        <a class="v2-launch" href="./v2/" aria-label="Open DarrenPig homepage V2.0">V2.0 <span>NEW EXPERIENCE ↗</span></a>
                         <h1>DarrenPig ( 常州工 朱佩韦 )</h1>
                         <!-- 机构Logo容器 -->
                         <div class="logo-container">

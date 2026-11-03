@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b09">
+  <meta name="description" content="Peiwei Zhu (Darren Pig) builds embedded systems, robots, and open-source tools across BSP, RTOS, openEuler, RT-Thread, and new energy.">
+  <meta name="keywords" content="Peiwei Zhu, Darren Pig, 朱佩韦, Embedded BSP, Robotics, openEuler, RT-Thread, Yocto, New Energy">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Peiwei Zhu — Embedded Systems & Robotics">
+  <meta property="og:description" content="Code. Circuits. Control. Explore selected engineering builds by Peiwei Zhu (Darren Pig).">
+  <meta property="og:url" content="https://darrenpig.github.io/v2/">
+  <meta property="og:image" content="https://darrenpig.github.io/v2/assets/portrait.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://darrenpig.github.io/v2/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/portrait.jpg" as="image">
+  <link rel="stylesheet" href="styles.css">
+  <title>Peiwei Zhu — Embedded Systems & Robotics</title>
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      const saved = localStorage.getItem('darren-theme');
+      if (saved) document.documentElement.dataset.theme = saved;
+    } catch (_) {}
+  </script>
+  <script defer src="script.js" onerror="document.documentElement.classList.remove('js')"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="page-grid" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="Peiwei Zhu, back to top">
+        <span class="brand-mark">DP</span>
+        <span class="brand-copy">PEIWEI ZHU<small>ENGINEERING PORTFOLIO</small></span>
+      </a>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#work"><span>01</span> Work</a>
+        <a href="#experience"><span>02</span> Experience</a>
+        <a href="#background"><span>03</span> Background</a>
+        <a href="#field-notes"><span>04</span> Field notes</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-button theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme">
+          <svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
+        </button>
+        <a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> OPEN SOURCE · EMBEDDED · ROBOTICS</p>
+        <h1 id="hero-title">
+          <span class="hero-name">PEIWEI<br>ZHU</span>
+          <span class="hero-alias">DARREN PIG<span class="accent">.</span></span>
+        </h1>
+        <p class="hero-chinese">朱佩韦 <span>/</span> ENGINEER · MAKER · MAINTAINER</p>
+        <p class="hero-intro">I build embedded systems, robots, and open-source tools — from low-level BSP and RTOS to products people can actually use.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
+          <a class="button button-ghost" href="https://darrenpig.github.io/files/Peiwei.%20Zhu-resume.pdf" target="_blank" rel="noopener">Download CV <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" data-delay="120">
+        <div class="portrait-card" data-spotlight>
+          <div class="portrait-topline"><span>PROFILE / 001</span><span>常州 · CHINA</span></div>
+          <div class="portrait-orbit orbit-one" aria-hidden="true"></div>
+          <div class="portrait-orbit orbit-two" aria-hidden="true"></div>
+          <div class="portrait-cross cross-one" aria-hidden="true">+</div>
+          <div class="portrait-cross cross-two" aria-hidden="true">+</div>
+          <img class="portrait" src="assets/portrait.jpg" width="500" height="500" alt="Portrait of Peiwei Zhu">
+          <div class="floating-tag tag-bsp">BSP / RTOS</div>
+          <div class="floating-tag tag-robotics">ROBOTICS</div>
+          <div class="portrait-caption"><strong>CODE. CIRCUITS. CONTROL.</strong><span>Building across the stack.</span></div>
+        </div>
+      </div>
+
+      <dl class="hero-stats reveal" data-delay="200">
+        <div><dt><span data-counter="3" data-pad="2">03</span></dt><dd>Featured builds</dd></div>
+        <div><dt><span data-counter="40">40</span>+</dt><dd>NEC community developers</dd></div>
+        <div><dt><span data-counter="70">70</span>+</dt><dd>Tech events & meetups</dd></div>
+      </dl>
+    </section>
+
+    <div class="tech-ticker" aria-label="Technologies I work with">
+      <div class="ticker-track">
+        <div class="ticker-group">
+          <span>OPENEULER</span><i>✳</i><span>RT-THREAD</span><i>✳</i><span>YOCTO</span><i>✳</i><span>ROS 2</span><i>✳</i><span>STM32</span><i>✳</i><span>ESP32</span><i>✳</i><span>EMBEDDED LINUX</span><i>✳</i><span>TYPESCRIPT</span><i>✳</i>
+        </div>
+        <div class="ticker-group" aria-hidden="true">
+          <span>OPENEULER</span><i>✳</i><span>RT-THREAD</span><i>✳</i><span>YOCTO</span><i>✳</i><span>ROS 2</span><i>✳</i><span>STM32</span><i>✳</i><span>ESP32</span><i>✳</i><span>EMBEDDED LINUX</span><i>✳</i><span>TYPESCRIPT</span><i>✳</i>
+        </div>
+      </div>
+    </div>
+
+    <section class="section shell" id="work" aria-labelledby="work-title">
+      <header class="section-header reveal">
+        <div><p class="section-kicker">01 / SELECTED WORK</p><h2 id="work-title">Built beyond<br><span>the slide deck.</span></h2></div>
+        <p>Working prototypes, open-source communities, and engineering tools shaped by real constraints.</p>
+      </header>
+
+      <div class="project-grid">
+        <article class="project-card project-featured reveal" data-spotlight>
+          <a class="project-media" href="https://solarglyph.newenergycoder.club/" target="_blank" rel="noopener" aria-label="Open SolarGlyph live demo">
+            <img src="assets/solarglyph.webp" width="1600" height="858" alt="SolarGlyph photovoltaic design and simulation dashboard" loading="lazy">
+            <span class="project-number">01</span><span class="media-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="project-body">
+            <p class="project-meta"><span>ENERGY × SOFTWARE</span><span>2024 — PRESENT</span></p>
+            <h3>SolarGlyph</h3>
+            <p class="project-lead">An integrated design, simulation, and investment-analysis platform for photovoltaic projects.</p>
+            <ul class="project-highlights">
+              <li>Map-based site planning and component layout</li>
+              <li>8,760-hour simulation with dual-source weather data</li>
+              <li>NPV, IRR, LCOE, and payback-period analysis</li>
+            </ul>
+            <div class="tag-list"><span>React</span><span>TypeScript</span><span>Three.js</span><span>AMap</span></div>
+            <a class="text-link" href="https://solarglyph.newenergycoder.club/" target="_blank" rel="noopener">Launch live project <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-spotlight>
+          <a class="project-media" href="https://www.newenergycoder.club/" target="_blank" rel="noopener" aria-label="Open New Energy Coder Club website">
+            <img src="assets/nec.webp" width="1600" height="857" alt="New Energy Coder Club open-source community website" loading="lazy">
+            <span class="project-number">02</span><span class="media-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="project-body">
+            <p class="project-meta"><span>COMMUNITY × ROBOTICS</span><span>2023 — PRESENT</span></p>
+            <h3>New Energy Coder Club</h3>
+            <p>An open-source collaboration platform for new energy, robotics, and competition engineering — built from scarce budgets into a 40+ developer community.</p>
+            <div class="tag-list"><span>openEuler</span><span>ROS 2</span><span>RT-Thread</span><span>STM32</span></div>
+            <div class="project-links">
+              <a class="text-link" href="https://www.newenergycoder.club/" target="_blank" rel="noopener">Official site <span aria-hidden="true">↗</span></a>
+              <a class="text-link muted-link" href="https://gitee.com/darrenpig/new_energy_coder_club" target="_blank" rel="noopener">Repository <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-delay="100" data-spotlight>
+          <a class="project-media" href="https://github.com/Darrenpig/BB8-Remake" target="_blank" rel="noopener" aria-label="Open BB8 Remake repository">
+            <img src="assets/bb8.webp" width="1600" height="1200" alt="BB-8 spherical robot hardware prototype" loading="lazy">
+            <span class="project-number">03</span><span class="media-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="project-body">
+            <p class="project-meta"><span>HARDWARE × CONTROL</span><span>OPEN SOURCE</span></p>
+            <h3>BB8 Remake</h3>
+            <p>A self-balancing spherical robot inspired by BB-8, combining differential drive, attitude estimation, PID control, and wireless operation.</p>
+            <div class="tag-list"><span>STM32</span><span>ESP32</span><span>IMU Fusion</span><span>PID</span></div>
+            <div class="project-links">
+              <a class="text-link" href="https://github.com/Darrenpig/BB8-Remake" target="_blank" rel="noopener">View source <span aria-hidden="true">↗</span></a>
+              <a class="text-link muted-link" href="https://www.bilibili.com/video/BV1PV4y197Zo/" target="_blank" rel="noopener">Watch demo <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="statement shell reveal" aria-label="Engineering philosophy">
+      <p>FROM LOW-LEVEL FIRMWARE</p>
+      <blockquote>“Make the hardware work.<br><span>Then make it useful.</span>”</blockquote>
+      <p>TO SYSTEMS PEOPLE CAN USE</p>
+    </section>
+
+    <section class="section shell" id="experience" aria-labelledby="experience-title">
+      <header class="section-header reveal">
+        <div><p class="section-kicker">02 / EXPERIENCE</p><h2 id="experience-title">Across software,<br><span>energy & machines.</span></h2></div>
+        <p>A systems-oriented path through open source, embedded engineering, and new-energy projects.</p>
+      </header>
+      <div class="experience-layout">
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <p class="timeline-date">2023 — PRESENT</p>
+            <div><h3>NECLab @ CIT</h3><p class="role">Maintainer & Lead Researcher</p><p>Leading open-source work across embedded BSP, robotics, and team engineering, supervised by Prof. Siwen Gu.</p><a class="text-link" href="https://gitee.com/darrenpig/new_energy_coder_club" target="_blank" rel="noopener">Explore NECLab <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="timeline-item reveal">
+            <p class="timeline-date">SYSTEMS INTEGRATION</p>
+            <div><h3>SAIC Maxus · 48V Power System</h3><p class="role">Technical Lead & Systems Integration</p><p>Coordinated solution architecture, supplier requirements, and system integration for a 48V powertrain electrification project.</p><div class="tag-list"><span>48V Architecture</span><span>MPPT</span><span>SOR Compliance</span></div></div>
+          </article>
+          <article class="timeline-item reveal">
+            <p class="timeline-date">ENGINEERING PROJECT</p>
+            <div><h3>Trinasolar Residential · Nigeria</h3><p class="role">Vehicle–Home Mutual Energy Project</p><p>Supported small-system integration, battery-swapping station planning, and application solution design for residential energy scenarios.</p><div class="tag-list"><span>LFP Batteries</span><span>Energy Dock</span><span>System Control</span></div></div>
+          </article>
+        </div>
+        <aside class="stack-panel reveal" data-delay="120">
+          <p class="section-kicker">WORKING STACK</p>
+          <div class="stack-row"><span>01</span><strong>Embedded</strong><p>openEuler · RT-Thread · Yocto · BSP</p></div>
+          <div class="stack-row"><span>02</span><strong>Robotics</strong><p>ROS / ROS 2 · Control · Computer Vision</p></div>
+          <div class="stack-row"><span>03</span><strong>Hardware</strong><p>STM32 · ESP32 · IMU · Sensors</p></div>
+          <div class="stack-row"><span>04</span><strong>Web</strong><p>React · TypeScript · Three.js</p></div>
+          <div class="terminal" aria-label="Terminal-style profile summary">
+            <div class="terminal-bar"><i></i><i></i><i></i><span>darren@lab:~</span></div>
+            <code><span>$</span> whoami<br>engineer --maker --maintainer<br><span>$</span> cat focus.txt<br>embedded_systems<br>robotics<br>open_source<br><span>$</span> <b class="terminal-cursor"></b></code>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section shell" id="background" aria-labelledby="background-title">
+      <header class="section-header reveal">
+        <div><p class="section-kicker">03 / BACKGROUND</p><h2 id="background-title">Learning by<br><span>building in public.</span></h2></div>
+        <p>Education, international exchange, and recognition along the way.</p>
+      </header>
+      <div class="background-grid">
+        <article class="background-card reveal" data-spotlight>
+          <p class="card-label">EDUCATION</p>
+          <div class="background-item"><span>2022 — 2026</span><h3>Changzhou Institute of Technology</h3><p>B.Eng. in New Energy Science and Engineering<br>School of Photoelectric Engineering</p></div>
+          <div class="background-item"><span>JUL — NOV 2024</span><h3>The University of Sydney</h3><p>Academic Visitor, School of Chemical and Biomolecular Engineering</p></div>
+        </article>
+        <article class="background-card reveal" data-delay="100" data-spotlight>
+          <p class="card-label">SELECTED RECOGNITION</p>
+          <ul class="award-list">
+            <li><span>2024 — 2025</span><div><strong>ROBOCON</strong><p>National Third Prize · Team CIT</p></div></li>
+            <li><span>2024</span><div><strong>Career Planning Competition</strong><p>Jiangsu Provincial Silver Medal</p></div></li>
+            <li><span>2024</span><div><strong>Jiangsu Provincial Scholarships</strong><p>Provincial Government & International Exchange</p></div></li>
+            <li><span>COMMUNITY</span><div><strong>openEuler Nanjing Ambassador</strong><p>Community advocacy & technical evangelism</p></div></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell" id="field-notes" aria-labelledby="notes-title">
+      <header class="section-header reveal">
+        <div><p class="section-kicker">04 / FIELD NOTES</p><h2 id="notes-title">Proof of work.<br><span>On camera.</span></h2></div>
+        <p>Robots, competitions, talks, and the people behind the builds.</p>
+      </header>
+      <div class="media-grid">
+        <a class="media-card media-wide reveal" href="https://www.bilibili.com/video/BV13vMczoEGP" target="_blank" rel="noopener">
+          <img src="assets/duma.png" width="500" height="281" alt="Duma humanoid robot conference presentation" loading="lazy"><span class="media-overlay"><small>CONFERENCE TALK · 2025</small><strong>Duma × RT-Thread + openEuler</strong></span><span class="play-button" aria-hidden="true">▶</span>
+        </a>
+        <a class="media-card reveal" data-delay="80" href="https://www.bilibili.com/video/BV19KHQejEms/" target="_blank" rel="noopener">
+          <img src="assets/robocon.png" width="500" height="333" alt="CIT team at the 2024 ROBOCON competition" loading="lazy"><span class="media-overlay"><small>COMPETITION · 2024</small><strong>ROBOCON with Team CIT</strong></span><span class="play-button" aria-hidden="true">▶</span>
+        </a>
+        <a class="media-card reveal" href="https://www.bilibili.com/video/BV1PV4y197Zo/" target="_blank" rel="noopener">
+          <img src="assets/bb8.webp" width="1600" height="1200" alt="BB-8 robot motion-control demonstration" loading="lazy"><span class="media-overlay"><small>ROBOT DEMO</small><strong>BB8 in motion</strong></span><span class="play-button" aria-hidden="true">▶</span>
+        </a>
+        <a class="media-card media-wide reveal" data-delay="80" href="https://www.bilibili.com/video/BV1hgHQeCEQu/" target="_blank" rel="noopener">
+          <img src="assets/sydney.png" width="500" height="334" alt="International exchange program at the University of Sydney" loading="lazy"><span class="media-overlay"><small>INTERNATIONAL EXCHANGE · 2024</small><strong>Sydney field notes</strong></span><span class="play-button" aria-hidden="true">▶</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="contact-section shell reveal" id="contact" aria-labelledby="contact-title">
+      <div class="contact-orbit" aria-hidden="true"></div>
+      <p class="section-kicker">05 / START A CONVERSATION</p>
+      <h2 id="contact-title">LET’S BUILD<br><span>SOMETHING REAL.</span></h2>
+      <p>Interested in embedded systems, robotics, open-source collaboration, or a new-energy project? My inbox is open.</p>
+      <a class="contact-email" href="mailto:22230635@czu.cn">22230635@czu.cn <span aria-hidden="true">↗</span></a>
+      <div class="social-links" aria-label="Social profiles">
+        <a href="https://github.com/Darrenpig" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://darrenpig.blog.csdn.net/" target="_blank" rel="noopener">CSDN ↗</a>
+        <a href="https://space.bilibili.com/438904165" target="_blank" rel="noopener">Bilibili ↗</a>
+        <a href="https://www.zhihu.com/people/zhu-pei-wei-93" target="_blank" rel="noopener">Zhihu ↗</a>
+        <a href="https://darrenpig.github.io/files/%E6%9C%B1%E4%BD%A9%E9%9F%A6-%E4%B8%AD%E6%96%87%E7%AE%80%E5%8E%86.pdf" target="_blank" rel="noopener">中文简历 ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell"><p>© <span id="year">2026</span> PEIWEI ZHU <span>·</span> V2.0</p><p>DESIGNED WITH INTENT. BUILT WITH CURIOSITY.</p><a href="../">CLASSIC VERSION ↗</a><a href="#top">BACK TO TOP ↑</a></div>
+  </footer>
+</body>
+</html>
